@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Datenschutzerklärung der Kinderwitzemaschine — eine ChatGPT-App für deutsche Kinderwitze. Keine Nutzerdaten werden gesammelt." />
   <title>Datenschutzerklärung – Kinderwitzemaschine</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -114,7 +115,7 @@
       border: 1px solid rgba(16,163,127,0.2);
     }
     .badge::before {
-      content: '✓';
+      content: '\2713';
       font-size: 11px;
     }
     .date-label {
@@ -144,7 +145,7 @@
       font-family: inherit;
     }
     .lang-tab:hover { color: var(--text); }
-    .lang-tab.active {
+    .lang-tab[aria-selected="true"] {
       color: var(--accent);
       border-bottom-color: var(--accent);
     }
@@ -178,6 +179,13 @@
     }
     .section p:last-child { margin-bottom: 0; }
     .section strong { font-weight: 600; }
+    .section ul {
+      margin: 6px 0 8px 20px;
+      color: var(--text);
+    }
+    .section ul li {
+      margin-bottom: 4px;
+    }
 
     a {
       color: var(--accent);
@@ -215,15 +223,24 @@
       .page-title-block h1 { font-size: 20px; }
       main { margin: 16px auto; }
     }
+
+    /* ── Print ──────────────────────────────── */
+    @media print {
+      body { background: #fff; font-size: 12px; }
+      header, .lang-tabs, footer { display: none; }
+      .card { border: none; box-shadow: none; }
+      .content { display: block !important; }
+      .content:last-of-type { page-break-before: always; }
+    }
   </style>
 </head>
 <body>
 
   <header>
     <div class="header-inner">
-      <div class="logo-dot"></div>
+      <div class="logo-dot" aria-hidden="true"></div>
       <span class="logo-name">Kinderwitzemaschine</span>
-      <div class="header-divider"></div>
+      <div class="header-divider" aria-hidden="true"></div>
       <span class="header-label">Privacy & Legal</span>
     </div>
   </header>
@@ -233,81 +250,122 @@
 
       <!-- Title -->
       <div class="page-title-block">
-        <h1>Datenschutzerklärung</h1>
+        <h1>Datenschutzerkl&auml;rung</h1>
         <div class="meta-row">
           <span class="badge">Keine Nutzerdaten werden gesammelt</span>
-          <span class="date-label">Zuletzt aktualisiert: Februar 2026</span>
+          <span class="date-label">Zuletzt aktualisiert: 25. Februar 2026</span>
         </div>
       </div>
 
       <!-- Language tabs -->
-      <div class="lang-tabs">
-        <button class="lang-tab active" onclick="switchLang('de', this)">Deutsch</button>
-        <button class="lang-tab" onclick="switchLang('en', this)">English</button>
+      <div class="lang-tabs" role="tablist" aria-label="Sprache / Language">
+        <button class="lang-tab" role="tab" aria-selected="true" aria-controls="lang-de" id="tab-de" onclick="switchLang('de')">Deutsch</button>
+        <button class="lang-tab" role="tab" aria-selected="false" aria-controls="lang-en" id="tab-en" onclick="switchLang('en')">English</button>
       </div>
 
       <!-- ── DEUTSCH ─────────────────────────── -->
-      <div id="lang-de" class="content active">
+      <div id="lang-de" class="content active" role="tabpanel" aria-labelledby="tab-de" lang="de">
 
         <div class="info-box">
           <strong>Kurz gesagt:</strong> Diese App sammelt, speichert und verarbeitet keinerlei
-          personenbezogene Daten. Es werden keine Cookies gesetzt und kein Tracking eingesetzt.
+          personenbezogene Daten. Es werden keine Cookies gesetzt, kein Tracking eingesetzt
+          und keine Benutzerkonten angelegt.
         </div>
 
         <div class="section">
-          <h2>1 · Verantwortliche Person</h2>
+          <h2>1 &middot; Verantwortliche Person</h2>
           <p>Diese App wird von einer Einzelperson betrieben.</p>
           <p>Kontakt: <a href="mailto:system.reset.all@gmail.com">system.reset.all@gmail.com</a></p>
         </div>
 
         <div class="section">
-          <h2>2 · Erhobene personenbezogene Daten</h2>
+          <h2>2 &middot; Wie diese App funktioniert</h2>
           <p>
-            <strong>Keine.</strong> Die Kinderwitzemaschine sammelt, speichert oder verarbeitet
-            keine personenbezogenen Daten der Nutzer. Es werden keine Cookies gesetzt,
-            keine Tracking-Skripte verwendet und keine Nutzerprofile erstellt.
+            Die Kinderwitzemaschine ist eine App f&uuml;r ChatGPT (OpenAI). Sie stellt einen
+            MCP-Server (Model Context Protocol) bereit, den ChatGPT im Hintergrund aufruft,
+            um Kinderwitze abzurufen.
           </p>
           <p>
-            Die App liefert ausschließlich Kinderwitze aus einer vorbereiteten, statischen
-            Datenbank. Anfragen werden vom App-Betreiber weder protokolliert noch gespeichert.
+            Der Ablauf ist wie folgt: Der Nutzer stellt eine Frage in ChatGPT &rarr;
+            ChatGPT ruft unseren Server auf und &uuml;bermittelt dabei ausschlie&szlig;lich
+            die Tool-Parameter (z.B. eine Kategorie oder ein Suchwort) &rarr;
+            unser Server liefert einen Witz zur&uuml;ck &rarr; ChatGPT zeigt den Witz an.
+          </p>
+          <p>
+            <strong>Wichtig:</strong> Unser Server empf&auml;ngt zu keinem Zeitpunkt den
+            vollst&auml;ndigen Chat-Verlauf, Nutzernamen, E-Mail-Adressen oder sonstige
+            personenbezogene Daten. Es wird ausschlie&szlig;lich der jeweilige Tool-Parameter
+            (Kategoriename oder Suchbegriff) &uuml;bermittelt.
           </p>
         </div>
 
         <div class="section">
-          <h2>3 · Zweck der Datenverarbeitung</h2>
+          <h2>3 &middot; Erhobene personenbezogene Daten</h2>
           <p>
-            Da keine Daten gesammelt werden, gibt es keinen Verarbeitungszweck.
-            Die einzige Funktion der App ist die Bereitstellung altersgerechter
+            <strong>Keine.</strong> Die Kinderwitzemaschine sammelt, speichert oder verarbeitet
+            keine personenbezogenen Daten der Nutzer. Im Einzelnen:
+          </p>
+          <ul>
+            <li>Keine Cookies</li>
+            <li>Keine Tracking-Skripte oder Analysetools</li>
+            <li>Keine Benutzerkonten oder Anmeldungen</li>
+            <li>Keine Nutzerprofile</li>
+            <li>Keine Zahlungsdaten</li>
+            <li>Keine Speicherung von Suchanfragen</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>4 &middot; Von der App zur&uuml;ckgegebene Daten</h2>
+          <p>
+            Die App gibt ausschlie&szlig;lich folgende Daten zur&uuml;ck:
+          </p>
+          <ul>
+            <li>Einen Kinderwitz (Frage und Antwort) aus einer statischen Datenbank</li>
+            <li>Den Kategorienamen des Witzes (z.B. &bdquo;Tiere&ldquo;, &bdquo;Schule&ldquo;)</li>
+            <li>Bei der Suche: die Anzahl der Treffer</li>
+          </ul>
+          <p>
+            Es werden <strong>keine</strong> Nutzer-IDs, Session-IDs, Zeitstempel,
+            Tracking-Codes oder sonstige personenbezogene Daten in den Antworten enthalten.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>5 &middot; Zweck der Datenverarbeitung</h2>
+          <p>
+            Da keine personenbezogenen Daten gesammelt werden, gibt es keinen Verarbeitungszweck.
+            Die einzige Funktion der App ist die Bereitstellung familienfreundlicher
             deutscher Kinderwitze.
           </p>
         </div>
 
         <div class="section">
-          <h2>4 · Empfänger der Daten</h2>
+          <h2>6 &middot; Empf&auml;nger der Daten</h2>
           <p>
-            Da keine Daten gesammelt werden, werden auch keine Daten an Dritte
-            weitergegeben. Es gibt keine Datenübermittlung an Partner,
+            Da keine personenbezogenen Daten gesammelt werden, werden auch keine Daten an Dritte
+            weitergegeben. Es gibt keine Daten&uuml;bermittlung an Partner,
             Werbetreibende oder sonstige Dritte.
           </p>
         </div>
 
         <div class="section">
-          <h2>5 · Rechte der Nutzer</h2>
+          <h2>7 &middot; Rechte der Nutzer</h2>
           <p>
             Da keine personenbezogenen Daten verarbeitet werden, sind keine
-            Maßnahmen zur Datenkontrolle erforderlich. Nutzer können die App
-            jederzeit ohne Datenlöschungsverfahren aufhören zu verwenden.
+            Ma&szlig;nahmen zur Datenkontrolle erforderlich. Nutzer k&ouml;nnen die App
+            jederzeit ohne Datenlöschungsverfahren aufh&ouml;ren zu verwenden.
           </p>
         </div>
 
         <div class="section">
-          <h2>6 · Hosting</h2>
+          <h2>8 &middot; Hosting</h2>
           <p>
             Diese App wird auf einem eigenen Server bei Hostinger
             (Hostinger International Ltd., Zypern/EU) gehostet.
-            Hostinger speichert möglicherweise Standard-Server-Logs
-            (IP-Adressen, Zeitstempel) für kurze Zeit zu Betriebszwecken.
-            Diese Logs sind für den App-Betreiber nicht einsehbar.
+            Hostinger speichert m&ouml;glicherweise Standard-Server-Logs
+            (IP-Adressen, Zeitstempel) f&uuml;r kurze Zeit zu Betriebszwecken.
+            Diese Logs sind f&uuml;r den App-Betreiber nicht einsehbar.
           </p>
           <p>
             Weitere Informationen:
@@ -318,9 +376,18 @@
         </div>
 
         <div class="section">
-          <h2>7 · Kontakt</h2>
+          <h2>9 &middot; &Auml;nderungen dieser Datenschutzerkl&auml;rung</h2>
           <p>
-            Bei Fragen zur Datenschutzerklärung:<br />
+            Sollte sich an dieser Datenschutzerkl&auml;rung etwas &auml;ndern,
+            wird diese Seite entsprechend aktualisiert. Das Datum der letzten
+            &Auml;nderung steht oben auf dieser Seite.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>10 &middot; Kontakt</h2>
+          <p>
+            Bei Fragen zur Datenschutzerkl&auml;rung:<br />
             <a href="mailto:system.reset.all@gmail.com">system.reset.all@gmail.com</a>
           </p>
         </div>
@@ -328,51 +395,90 @@
       </div>
 
       <!-- ── ENGLISH ─────────────────────────── -->
-      <div id="lang-en" class="content">
+      <div id="lang-en" class="content" role="tabpanel" aria-labelledby="tab-en" lang="en">
 
         <div class="info-box">
           <strong>In short:</strong> This app does not collect, store, or process any personal data.
-          No cookies are set and no tracking is used.
+          No cookies are set, no tracking is used, and no user accounts are created.
         </div>
 
         <div class="section">
-          <h2>1 · Controller</h2>
+          <h2>1 &middot; Controller</h2>
           <p>This app is operated by an individual developer.</p>
           <p>Contact: <a href="mailto:system.reset.all@gmail.com">system.reset.all@gmail.com</a></p>
         </div>
 
         <div class="section">
-          <h2>2 · Personal data collected</h2>
+          <h2>2 &middot; How this app works</h2>
           <p>
-            <strong>None.</strong> Kinderwitzemaschine does not collect, store, or process
-            any personal data from users. No cookies are set, no tracking scripts are used,
-            and no user profiles are created.
+            Kinderwitzemaschine is a ChatGPT app (by OpenAI). It provides an MCP server
+            (Model Context Protocol) that ChatGPT calls in the background to retrieve
+            children's jokes.
           </p>
           <p>
-            The app only serves children's jokes from a pre-prepared, static database.
-            Requests are not logged or stored by the app operator.
+            The flow is as follows: The user asks a question in ChatGPT &rarr;
+            ChatGPT calls our server, transmitting only the tool parameters
+            (e.g. a category name or a search keyword) &rarr;
+            our server returns a joke &rarr; ChatGPT displays the joke to the user.
+          </p>
+          <p>
+            <strong>Important:</strong> Our server never receives the full chat history,
+            usernames, email addresses, or any other personal data. Only the specific
+            tool parameter (category name or search keyword) is transmitted.
           </p>
         </div>
 
         <div class="section">
-          <h2>3 · Purpose of data processing</h2>
+          <h2>3 &middot; Personal data collected</h2>
           <p>
-            Since no data is collected, there is no purpose of data processing.
-            The sole function of this app is to provide age-appropriate
+            <strong>None.</strong> Kinderwitzemaschine does not collect, store, or process
+            any personal data from users. Specifically:
+          </p>
+          <ul>
+            <li>No cookies</li>
+            <li>No tracking scripts or analytics tools</li>
+            <li>No user accounts or logins</li>
+            <li>No user profiles</li>
+            <li>No payment data</li>
+            <li>No storage of search queries</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>4 &middot; Data returned by this app</h2>
+          <p>
+            The app exclusively returns the following data:
+          </p>
+          <ul>
+            <li>A children's joke (question and answer) from a static database</li>
+            <li>The category name of the joke (e.g. "Animals", "School")</li>
+            <li>For search queries: the number of matching results</li>
+          </ul>
+          <p>
+            <strong>No</strong> user IDs, session IDs, timestamps, tracking codes,
+            or any other personal data is included in responses.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>5 &middot; Purpose of data processing</h2>
+          <p>
+            Since no personal data is collected, there is no purpose of data processing.
+            The sole function of this app is to provide family-friendly
             German children's jokes.
           </p>
         </div>
 
         <div class="section">
-          <h2>4 · Categories of recipients</h2>
+          <h2>6 &middot; Categories of recipients</h2>
           <p>
-            Since no data is collected, no data is shared with any third parties.
+            Since no personal data is collected, no data is shared with any third parties.
             There is no data transmission to partners, advertisers, or other third parties.
           </p>
         </div>
 
         <div class="section">
-          <h2>5 · User controls</h2>
+          <h2>7 &middot; User controls</h2>
           <p>
             Since no personal data is processed, no data control measures are required.
             Users can stop using the app at any time without any data deletion process.
@@ -380,7 +486,7 @@
         </div>
 
         <div class="section">
-          <h2>6 · Hosting</h2>
+          <h2>8 &middot; Hosting</h2>
           <p>
             This app is hosted on a dedicated server at Hostinger
             (Hostinger International Ltd., Cyprus/EU).
@@ -396,7 +502,15 @@
         </div>
 
         <div class="section">
-          <h2>7 · Contact</h2>
+          <h2>9 &middot; Changes to this privacy policy</h2>
+          <p>
+            If this privacy policy is updated, this page will be revised accordingly.
+            The date of the last update is shown at the top of this page.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>10 &middot; Contact</h2>
           <p>
             For privacy questions:<br />
             <a href="mailto:system.reset.all@gmail.com">system.reset.all@gmail.com</a>
@@ -408,18 +522,20 @@
   </main>
 
   <footer>
-    <p>© 2026 Kinderwitzemaschine &nbsp;·&nbsp; Zuletzt aktualisiert: Februar 2026</p>
+    <p>&copy; 2026 Kinderwitzemaschine &nbsp;&middot;&nbsp; Zuletzt aktualisiert: 25. Februar 2026</p>
   </footer>
 
   <script>
-    function switchLang(lang, btn) {
-      // Alle Contents ausblenden
-      document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
-      // Alle Tabs deaktivieren
-      document.querySelectorAll('.lang-tab').forEach(el => el.classList.remove('active'));
-      // Ausgewählten Tab + Content aktivieren
+    function switchLang(lang) {
+      // Hide all content panels
+      document.querySelectorAll('.content').forEach(function(el) { el.classList.remove('active'); });
+      // Deselect all tabs
+      document.querySelectorAll('.lang-tab').forEach(function(el) { el.setAttribute('aria-selected', 'false'); });
+      // Activate selected tab + content
       document.getElementById('lang-' + lang).classList.add('active');
-      btn.classList.add('active');
+      document.getElementById('tab-' + lang).setAttribute('aria-selected', 'true');
+      // Update document language
+      document.documentElement.lang = lang;
     }
   </script>
 
