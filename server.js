@@ -13,10 +13,13 @@ app.use(express.json());
 // Statische Dateien aus /public bedienen
 app.use("/public", express.static(join(__dirname, "public")));
 
+// Domain-Verifizierung fuer OpenAI (Token liegt in .well-known/)
+app.use("/.well-known", express.static(join(__dirname, ".well-known"), { dotfiles: "allow" }));
+
 // Witze laden (einmalig beim Start)
 const jokes = JSON.parse(readFileSync(join(__dirname, "jokes.json"), "utf-8"));
 
-// Hilfsfunktion: Zufälligen Witz formatieren
+// Hilfsfunktion: Witz formatieren
 function formatJoke(witz) {
   return `❓ ${witz.frage}\n\n😄 ${witz.antwort}`;
 }
@@ -41,7 +44,7 @@ app.post("/mcp", async (req, res) => {
         "Returns a random German children's joke from the Kinderwitzemaschine database. " +
         "Use this when the user asks for any joke without specifying a topic or category. " +
         "All jokes are family-friendly and suitable for the whole family.",
-      annotations: { readOnlyHint: true, openWorldHint: false },
+      annotations: { readOnlyHint: true, destructiveHint: false, openWorldHint: false },
     },
     () => {
       const witz = jokes[Math.floor(Math.random() * jokes.length)];
@@ -66,9 +69,9 @@ app.post("/mcp", async (req, res) => {
         "Available categories: Tiere (Animals), Schule (School), Essen (Food), " +
         "Familie (Family), Sport (Sports), Fantasie (Fantasy). " +
         "Use this when the user asks for jokes about a specific topic.",
-      annotations: { readOnlyHint: true, openWorldHint: false },
+      annotations: { readOnlyHint: true, destructiveHint: false, openWorldHint: false },
       inputSchema: z.object({
-        kategorie: z
+        category: z
           .enum(["Tiere", "Schule", "Essen", "Familie", "Sport", "Fantasie"])
           .describe(
             "The joke category. Options: " +
@@ -77,14 +80,14 @@ app.post("/mcp", async (req, res) => {
           ),
       }),
     },
-    ({ kategorie }) => {
-      const gefiltert = jokes.filter((j) => j.kategorie === kategorie);
+    ({ category }) => {
+      const gefiltert = jokes.filter((j) => j.kategorie === category);
       const witz = gefiltert[Math.floor(Math.random() * gefiltert.length)];
       return {
         content: [
           {
             type: "text",
-            text: `🎉 A joke from the category "${kategorie}":\n\n${formatJoke(witz)}`,
+            text: `🎉 A joke from the category "${category}":\n\n${formatJoke(witz)}`,
           },
         ],
       };
@@ -98,12 +101,11 @@ app.post("/mcp", async (req, res) => {
       title: "Search Children's Jokes by Keyword",
       description:
         "Searches German children's jokes by keyword in German or English. " +
-        "If no exact match is found, automatically returns a random joke as a friendly fallback " +
-        "so the user always gets entertained. " +
+        "If no exact match is found, automatically returns a random joke as a friendly fallback. " +
         "Examples: 'elephant', 'Elefant', 'pizza', 'dragon', 'Schule', 'school'.",
-      annotations: { readOnlyHint: true, openWorldHint: false },
+      annotations: { readOnlyHint: true, destructiveHint: false, openWorldHint: false },
       inputSchema: z.object({
-        stichwort: z
+        keyword: z
           .string()
           .min(2)
           .max(50)
@@ -112,13 +114,13 @@ app.post("/mcp", async (req, res) => {
           ),
       }),
     },
-    ({ stichwort }) => {
-      const keyword = stichwort.toLowerCase();
+    ({ keyword }) => {
+      const term = keyword.toLowerCase();
       const ergebnisse = jokes.filter(
         (j) =>
-          j.frage.toLowerCase().includes(keyword) ||
-          j.antwort.toLowerCase().includes(keyword) ||
-          j.kategorie.toLowerCase().includes(keyword)
+          j.frage.toLowerCase().includes(term) ||
+          j.antwort.toLowerCase().includes(term) ||
+          j.kategorie.toLowerCase().includes(term)
       );
 
       // Kein Treffer → smarter Fallback statt leere Antwort
@@ -129,7 +131,7 @@ app.post("/mcp", async (req, res) => {
             {
               type: "text",
               text:
-                `🔍 No joke found for "${stichwort}" — but here is a funny one anyway:\n\n` +
+                `🔍 No joke found for "${keyword}" — but here is a funny one anyway:\n\n` +
                 `${formatJoke(fallback)}\n\n` +
                 `💡 Tip: Try categories like Animals, School, Food, Family, Sports or Fantasy!`,
             },
@@ -143,7 +145,7 @@ app.post("/mcp", async (req, res) => {
           {
             type: "text",
             text:
-              `🔍 Found ${ergebnisse.length} joke(s) for "${stichwort}":\n\n` +
+              `🔍 Found ${ergebnisse.length} joke(s) for "${keyword}":\n\n` +
               `${formatJoke(witz)}`,
           },
         ],
