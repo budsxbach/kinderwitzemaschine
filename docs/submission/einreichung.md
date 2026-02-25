@@ -59,6 +59,11 @@ https://kinderwitzemaschine.duckdns.org/mcp
 https://kinderwitzemaschine.duckdns.org/datenschutz
 ```
 
+### Terms of Service URL
+```
+https://kinderwitzemaschine.duckdns.org/terms
+```
+
 ### Company / Homepage URL
 ```
 https://kinderwitzemaschine.duckdns.org
@@ -142,6 +147,7 @@ Erzähl mir einen Witz über die Schule
 - [x] VPS läuft ohne Fehler (`pm2 status` → online)
 - [x] `https://kinderwitzemaschine.duckdns.org/` gibt `{"status":"ok"}` zurück
 - [x] `https://kinderwitzemaschine.duckdns.org/datenschutz` ist erreichbar
+- [x] `https://kinderwitzemaschine.duckdns.org/terms` ist erreichbar
 - [x] `https://kinderwitzemaschine.duckdns.org/mcp` antwortet auf POST-Anfragen
 - [x] Logo.png ist vorhanden (liegt im Projektordner)
 - [x] Identität bei platform.openai.com verifiziert

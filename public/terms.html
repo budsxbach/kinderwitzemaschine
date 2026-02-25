@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nutzungsbedingungen der Kinderwitzemaschine — eine ChatGPT-App für deutsche Kinderwitze." />
+  <title>Nutzungsbedingungen – Kinderwitzemaschine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg:           #ffffff;
+      --surface:      #f7f7f8;
+      --border:       #e5e5e5;
+      --text:         #0d0d0d;
+      --text-muted:   #6e6e80;
+      --accent:       #10a37f;
+      --accent-light: #e6f4f1;
+      --radius:       10px;
+      --shadow:       0 1px 4px rgba(0,0,0,0.08);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: var(--surface);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 15px;
+      min-height: 100vh;
+    }
+
+    /* ── Header ─────────────────────────────── */
+    header {
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+    }
+    .header-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+    }
+    .logo-name {
+      font-weight: 700;
+      font-size: 15px;
+      color: var(--text);
+      letter-spacing: -0.2px;
+    }
+    .header-divider {
+      width: 1px;
+      height: 18px;
+      background: var(--border);
+      margin: 0 4px;
+    }
+    .header-label {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* ── Main card ──────────────────────────── */
+    main {
+      max-width: 800px;
+      margin: 36px auto;
+      padding: 0 20px 60px;
+    }
+
+    .card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    /* ── Page title block ───────────────────── */
+    .page-title-block {
+      padding: 36px 40px 28px;
+      border-bottom: 1px solid var(--border);
+    }
+    .page-title-block h1 {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 10px;
+    }
+    .meta-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: var(--accent-light);
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 20px;
+      border: 1px solid rgba(16,163,127,0.2);
+    }
+    .badge::before {
+      content: '\2713';
+      font-size: 11px;
+    }
+    .date-label {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* ── Language tabs ──────────────────────── */
+    .lang-tabs {
+      display: flex;
+      gap: 0;
+      padding: 0 40px;
+      border-bottom: 1px solid var(--border);
+      background: var(--bg);
+    }
+    .lang-tab {
+      padding: 14px 18px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-muted);
+      cursor: pointer;
+      border: none;
+      background: none;
+      border-bottom: 2px solid transparent;
+      margin-bottom: -1px;
+      transition: color 0.15s, border-color 0.15s;
+      font-family: inherit;
+    }
+    .lang-tab:hover { color: var(--text); }
+    .lang-tab[aria-selected="true"] {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    /* ── Content area ───────────────────────── */
+    .content {
+      padding: 36px 40px;
+      display: none;
+    }
+    .content.active { display: block; }
+
+    /* ── Sections ───────────────────────────── */
+    .section {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .section:last-child { border-bottom: none; padding-bottom: 0; }
+    .section:first-child { padding-top: 0; }
+
+    .section h2 {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      margin-bottom: 10px;
+    }
+    .section p {
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    .section p:last-child { margin-bottom: 0; }
+    .section strong { font-weight: 600; }
+    .section ul {
+      margin: 6px 0 8px 20px;
+      color: var(--text);
+    }
+    .section ul li {
+      margin-bottom: 4px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+
+    /* ── Highlight box ──────────────────────── */
+    .info-box {
+      background: var(--accent-light);
+      border: 1px solid rgba(16,163,127,0.25);
+      border-radius: 8px;
+      padding: 14px 18px;
+      font-size: 14px;
+      color: #0a5c47;
+      margin-bottom: 20px;
+    }
+    .info-box strong { color: #085a42; }
+
+    /* ── Footer ─────────────────────────────── */
+    footer {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px 40px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    footer a { color: var(--text-muted); }
+    footer a:hover { color: var(--accent); text-decoration: none; }
+
+    /* ── Responsive ─────────────────────────── */
+    @media (max-width: 600px) {
+      .page-title-block, .lang-tabs, .content { padding-left: 20px; padding-right: 20px; }
+      .page-title-block h1 { font-size: 20px; }
+      main { margin: 16px auto; }
+    }
+
+    /* ── Print ──────────────────────────────── */
+    @media print {
+      body { background: #fff; font-size: 12px; }
+      header, .lang-tabs, footer { display: none; }
+      .card { border: none; box-shadow: none; }
+      .content { display: block !important; }
+      .content:last-of-type { page-break-before: always; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo-dot" aria-hidden="true"></div>
+      <span class="logo-name">Kinderwitzemaschine</span>
+      <div class="header-divider" aria-hidden="true"></div>
+      <span class="header-label">Terms of Service</span>
+    </div>
+  </header>
+
+  <main>
+    <div class="card">
+
+      <!-- Title -->
+      <div class="page-title-block">
+        <h1>Nutzungsbedingungen</h1>
+        <div class="meta-row">
+          <span class="badge">Kostenlos &middot; Keine Registrierung</span>
+          <span class="date-label">Zuletzt aktualisiert: 26. Februar 2026</span>
+        </div>
+      </div>
+
+      <!-- Language tabs -->
+      <div class="lang-tabs" role="tablist" aria-label="Sprache / Language">
+        <button class="lang-tab" role="tab" aria-selected="true" aria-controls="lang-de" id="tab-de" onclick="switchLang('de')">Deutsch</button>
+        <button class="lang-tab" role="tab" aria-selected="false" aria-controls="lang-en" id="tab-en" onclick="switchLang('en')">English</button>
+      </div>
+
+      <!-- ── DEUTSCH ─────────────────────────── -->
+      <div id="lang-de" class="content active" role="tabpanel" aria-labelledby="tab-de" lang="de">
+
+        <div class="info-box">
+          <strong>Kurz gesagt:</strong> Die Kinderwitzemaschine ist kostenlos, erfordert keine
+          Registrierung und liefert ausschlie&szlig;lich familienfreundliche Witze.
+          Mit der Nutzung akzeptierst du diese einfachen Bedingungen.
+        </div>
+
+        <div class="section">
+          <h2>1 &middot; Geltungsbereich</h2>
+          <p>
+            Diese Nutzungsbedingungen gelten f&uuml;r die Verwendung der
+            <strong>Kinderwitzemaschine</strong>, einer App f&uuml;r ChatGPT (OpenAI),
+            die &uuml;ber den MCP-Endpunkt
+            <code>https://kinderwitzemaschine.duckdns.org/mcp</code> bereitgestellt wird.
+          </p>
+          <p>
+            Durch die Nutzung der App erkl&auml;rst du dich mit diesen
+            Nutzungsbedingungen einverstanden.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>2 &middot; Beschreibung des Dienstes</h2>
+          <p>
+            Die Kinderwitzemaschine stellt eine Sammlung von &uuml;ber 215 deutschen
+            Kinderwitzen bereit, die &uuml;ber ChatGPT abgerufen werden k&ouml;nnen.
+            Die App bietet drei Funktionen:
+          </p>
+          <ul>
+            <li>Zuf&auml;lligen Witz abrufen</li>
+            <li>Witz nach Kategorie abrufen (Tiere, Schule, Essen, Familie, Sport, Fantasie)</li>
+            <li>Witze nach Stichwort suchen (Deutsch oder Englisch)</li>
+          </ul>
+          <p>
+            Die App ist vollst&auml;ndig kostenlos und erfordert keine Registrierung
+            oder Anmeldung.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>3 &middot; Nutzungsrechte</h2>
+          <p>
+            Du darfst die Kinderwitzemaschine frei nutzen, um Witze abzurufen und
+            sie privat oder &ouml;ffentlich zu teilen. Die Witze d&uuml;rfen weitererz&auml;hlt,
+            geteilt und f&uuml;r nicht-kommerzielle Zwecke verwendet werden.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>4 &middot; Verbotene Nutzung</h2>
+          <p>Du stimmst zu, die App nicht f&uuml;r folgende Zwecke zu nutzen:</p>
+          <ul>
+            <li>&Uuml;berlastung des Servers durch automatisierte Massenanfragen</li>
+            <li>Versuch, den Server zu hacken oder zu manipulieren</li>
+            <li>Nutzung der App f&uuml;r rechtswidrige Zwecke</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>5 &middot; Verf&uuml;gbarkeit</h2>
+          <p>
+            Der Betreiber bem&uuml;ht sich, die App verf&uuml;gbar zu halten, kann
+            aber keine 100%ige Verf&uuml;gbarkeit garantieren. Wartungsarbeiten,
+            technische St&ouml;rungen oder h&ouml;here Gewalt k&ouml;nnen zu
+            vor&uuml;bergehenden Ausf&auml;llen f&uuml;hren.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>6 &middot; Haftungsausschluss</h2>
+          <p>
+            Die App wird <strong>&bdquo;wie sie ist&ldquo;</strong> ohne jegliche
+            ausdr&uuml;ckliche oder stillschweigende Gew&auml;hrleistung bereitgestellt.
+            Der Betreiber &uuml;bernimmt keine Haftung f&uuml;r die Richtigkeit,
+            Vollst&auml;ndigkeit oder Aktualit&auml;t der Witze.
+          </p>
+          <p>
+            Die Nutzung der App erfolgt auf eigene Verantwortung.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>7 &middot; Datenschutz</h2>
+          <p>
+            Es werden keine personenbezogenen Daten gesammelt. Weitere Informationen
+            findest du in unserer
+            <a href="/datenschutz">Datenschutzerkl&auml;rung</a>.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>8 &middot; &Auml;nderungen</h2>
+          <p>
+            Der Betreiber beh&auml;lt sich das Recht vor, diese Nutzungsbedingungen
+            jederzeit zu &auml;ndern. Das Datum der letzten &Auml;nderung steht
+            oben auf dieser Seite.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>9 &middot; Kontakt</h2>
+          <p>
+            Bei Fragen zu diesen Nutzungsbedingungen:<br />
+            <a href="mailto:system.reset.all@gmail.com">system.reset.all@gmail.com</a>
+          </p>
+        </div>
+
+      </div>
+
+      <!-- ── ENGLISH ─────────────────────────── -->
+      <div id="lang-en" class="content" role="tabpanel" aria-labelledby="tab-en" lang="en">
+
+        <div class="info-box">
+          <strong>In short:</strong> Kinderwitzemaschine is free, requires no registration,
+          and delivers only family-friendly jokes. By using the app, you agree to these
+          simple terms.
+        </div>
+
+        <div class="section">
+          <h2>1 &middot; Scope</h2>
+          <p>
+            These Terms of Service apply to the use of
+            <strong>Kinderwitzemaschine</strong>, a ChatGPT app (OpenAI) provided via the
+            MCP endpoint at
+            <code>https://kinderwitzemaschine.duckdns.org/mcp</code>.
+          </p>
+          <p>
+            By using the app, you agree to these Terms of Service.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>2 &middot; Description of service</h2>
+          <p>
+            Kinderwitzemaschine provides a collection of over 215 German children's jokes
+            that can be retrieved via ChatGPT. The app offers three functions:
+          </p>
+          <ul>
+            <li>Get a random joke</li>
+            <li>Get a joke by category (Animals, School, Food, Family, Sports, Fantasy)</li>
+            <li>Search jokes by keyword (German or English)</li>
+          </ul>
+          <p>
+            The app is completely free and requires no registration or login.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>3 &middot; Usage rights</h2>
+          <p>
+            You may freely use Kinderwitzemaschine to retrieve jokes and share them
+            privately or publicly. Jokes may be retold, shared, and used for
+            non-commercial purposes.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>4 &middot; Prohibited use</h2>
+          <p>You agree not to use the app for the following purposes:</p>
+          <ul>
+            <li>Overloading the server with automated mass requests</li>
+            <li>Attempting to hack or manipulate the server</li>
+            <li>Using the app for unlawful purposes</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>5 &middot; Availability</h2>
+          <p>
+            The operator strives to keep the app available but cannot guarantee
+            100% uptime. Maintenance, technical issues, or force majeure may
+            cause temporary interruptions.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>6 &middot; Disclaimer</h2>
+          <p>
+            The app is provided <strong>&ldquo;as is&rdquo;</strong> without any
+            express or implied warranty. The operator assumes no liability for the
+            accuracy, completeness, or timeliness of the jokes.
+          </p>
+          <p>
+            Use of the app is at your own risk.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>7 &middot; Privacy</h2>
+          <p>
+            No personal data is collected. For more information, see our
+            <a href="/datenschutz">Privacy Policy</a>.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>8 &middot; Changes</h2>
+          <p>
+            The operator reserves the right to modify these Terms of Service at any time.
+            The date of the last update is shown at the top of this page.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>9 &middot; Contact</h2>
+          <p>
+            For questions about these Terms of Service:<br />
+            <a href="mailto:system.reset.all@gmail.com">system.reset.all@gmail.com</a>
+          </p>
+        </div>
+
+      </div>
+    </div><!-- /.card -->
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Kinderwitzemaschine &nbsp;&middot;&nbsp; Zuletzt aktualisiert: 26. Februar 2026</p>
+  </footer>
+
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.content').forEach(function(el) { el.classList.remove('active'); });
+      document.querySelectorAll('.lang-tab').forEach(function(el) { el.setAttribute('aria-selected', 'false'); });
+      document.getElementById('lang-' + lang).classList.add('active');
+      document.getElementById('tab-' + lang).setAttribute('aria-selected', 'true');
+      document.documentElement.lang = lang;
+    }
+  </script>
+
+</body>
+</html>
