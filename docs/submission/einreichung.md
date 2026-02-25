@@ -1,7 +1,5 @@
 # OpenAI App Submission — Kinderwitzemaschine
 
-> WICHTIG: Ersetze DEINE-URL durch deine echte Railway-URL bevor du einreichst.
-
 ---
 
 ## Formularfelder zum Kopieren
@@ -53,17 +51,17 @@ Es werden keine Nutzerdaten gesammelt. Keine Anmeldung erforderlich. Kostenlos.
 
 ### MCP Server URL
 ```
-https://DEINE-URL.railway.app/mcp
+https://kinderwitzemaschine.duckdns.org/mcp
 ```
 
 ### Privacy Policy URL
 ```
-https://DEINE-URL.railway.app/datenschutz
+https://kinderwitzemaschine.duckdns.org/datenschutz
 ```
 
 ### Customer Support Contact
 ```
-kontakt@kinderwitzemaschine.de
+system.reset.all@gmail.com
 ```
 
 ### Category
@@ -111,10 +109,10 @@ Erzähl mir einen Witz über die Schule
 
 ## Checkliste vor dem Einreichen
 
-- [ ] Railway-Deployment läuft ohne Fehler
-- [ ] `https://DEINE-URL.railway.app/` gibt `{"status":"ok"}` zurück
-- [ ] `https://DEINE-URL.railway.app/datenschutz` ist erreichbar
-- [ ] `https://DEINE-URL.railway.app/mcp` antwortet auf POST-Anfragen
+- [ ] VPS läuft ohne Fehler (`pm2 status` → online)
+- [ ] `https://kinderwitzemaschine.duckdns.org/` gibt `{"status":"ok"}` zurück
+- [ ] `https://kinderwitzemaschine.duckdns.org/datenschutz` ist erreichbar
+- [ ] `https://kinderwitzemaschine.duckdns.org/mcp` antwortet auf POST-Anfragen
 - [ ] Logo.png ist vorhanden (liegt im Projektordner)
 - [ ] Identität bei platform.openai.com verifiziert
 - [ ] Alle Test-Prompts funktionieren in ChatGPT
