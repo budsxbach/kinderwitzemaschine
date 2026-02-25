@@ -155,6 +155,15 @@ app.get("/datenschutz", (req, res) => {
   res.sendFile(join(__dirname, "public", "datenschutz.html"));
 });
 
+// Verhindert dass unbehandelte Fehler den Server crashen
+process.on("unhandledRejection", (reason) => {
+  console.error("Unbehandelter Fehler:", reason);
+});
+
+process.on("uncaughtException", (error) => {
+  console.error("Unerwarteter Fehler:", error.message);
+});
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Kinderwitzemaschine läuft auf Port ${PORT}`);
