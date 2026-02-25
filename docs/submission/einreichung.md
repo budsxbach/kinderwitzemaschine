@@ -117,7 +117,7 @@ Search for a children's joke about elephants
 ```
 **Erwartete Antwort (Beispiel):**
 ```
-🔍 Found 3 joke(s) for "elephants":
+🔍 Found 2 joke(s) for "elephants":
 
 ❓ Wie nennt man einen Elefanten, der im Schulbus sitzt?
 😄 Den Klassenschwergewichtler!
@@ -139,14 +139,14 @@ Erzähl mir einen Witz über die Schule
 
 ## Checkliste vor dem Einreichen
 
-- [ ] VPS läuft ohne Fehler (`pm2 status` → online)
-- [ ] `https://kinderwitzemaschine.duckdns.org/` gibt `{"status":"ok"}` zurück
-- [ ] `https://kinderwitzemaschine.duckdns.org/datenschutz` ist erreichbar
-- [ ] `https://kinderwitzemaschine.duckdns.org/mcp` antwortet auf POST-Anfragen
-- [ ] Logo.png ist vorhanden (liegt im Projektordner)
-- [ ] Identität bei platform.openai.com verifiziert
-- [ ] Alle Test-Prompts funktionieren in ChatGPT
-- [ ] Screenshots gemacht (3-5 Stück)
+- [x] VPS läuft ohne Fehler (`pm2 status` → online)
+- [x] `https://kinderwitzemaschine.duckdns.org/` gibt `{"status":"ok"}` zurück
+- [x] `https://kinderwitzemaschine.duckdns.org/datenschutz` ist erreichbar
+- [x] `https://kinderwitzemaschine.duckdns.org/mcp` antwortet auf POST-Anfragen
+- [x] Logo.png ist vorhanden (liegt im Projektordner)
+- [x] Identität bei platform.openai.com verifiziert
+- [x] Alle Test-Prompts funktionieren in ChatGPT
+- [x] Screenshots gemacht (5 Stück im Screenshots/-Ordner)
 
 ---
 
