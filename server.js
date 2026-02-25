@@ -24,6 +24,71 @@ function formatJoke(witz) {
   return `❓ ${witz.frage}\n\n😄 ${witz.antwort}`;
 }
 
+// Englisch → Deutsch Übersetzungstabelle für häufige Suchbegriffe
+const translations = {
+  elephant: "elefant", elephants: "elefant",
+  donkey: "esel", donkeys: "esel",
+  cat: "katze", cats: "katze",
+  dog: "hund", dogs: "hund",
+  horse: "pferd", horses: "pferd",
+  bird: "vogel", birds: "vogel",
+  fish: "fisch",
+  pig: "schwein", pigs: "schwein",
+  cow: "kuh",
+  chicken: "huhn",
+  mouse: "maus", mice: "maus",
+  bear: "bär",
+  monkey: "affe", monkeys: "affe",
+  lion: "löwe",
+  snake: "schlange",
+  frog: "frosch",
+  rabbit: "hase",
+  spider: "spinne",
+  bee: "biene",
+  school: "schule",
+  teacher: "lehrer", teachers: "lehrer",
+  student: "schüler", students: "schüler",
+  food: "essen",
+  family: "familie",
+  dragon: "drachen", dragons: "drachen",
+  knight: "ritter",
+  wizard: "zauberer",
+  princess: "prinzessin",
+  king: "könig",
+  soccer: "fußball", football: "fußball",
+  swimming: "schwimmen",
+  sports: "sport",
+  animals: "tiere", animal: "tier",
+  fantasy: "fantasie",
+  cooking: "kochen",
+  water: "wasser",
+  snow: "schnee",
+  sun: "sonne",
+};
+
+// Hilfsfunktion: Wortgrenze-Suche (verhindert "Esel" in "dieselben")
+function searchJokes(keyword) {
+  const term = keyword.toLowerCase();
+  const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const regex = new RegExp(`\\b${escaped}`, "i");
+
+  let results = jokes.filter(
+    (j) => regex.test(j.frage) || regex.test(j.antwort) || regex.test(j.kategorie)
+  );
+
+  // Kein Treffer? Englisches Keyword ins Deutsche übersetzen und nochmal suchen
+  if (results.length === 0 && translations[term]) {
+    const deTerm = translations[term];
+    const deEscaped = deTerm.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const deRegex = new RegExp(`\\b${deEscaped}`, "i");
+    results = jokes.filter(
+      (j) => deRegex.test(j.frage) || deRegex.test(j.antwort) || deRegex.test(j.kategorie)
+    );
+  }
+
+  return results;
+}
+
 // MCP-Endpunkt — jede Anfrage bekommt eine neue Server-Instanz (stateless)
 app.post("/mcp", async (req, res) => {
   const transport = new StreamableHTTPServerTransport({
@@ -118,13 +183,7 @@ app.post("/mcp", async (req, res) => {
       }),
     },
     ({ keyword }) => {
-      const term = keyword.toLowerCase();
-      const ergebnisse = jokes.filter(
-        (j) =>
-          j.frage.toLowerCase().includes(term) ||
-          j.antwort.toLowerCase().includes(term) ||
-          j.kategorie.toLowerCase().includes(term)
-      );
+      const ergebnisse = searchJokes(keyword);
 
       // Kein Treffer → smarter Fallback statt leere Antwort
       if (ergebnisse.length === 0) {
