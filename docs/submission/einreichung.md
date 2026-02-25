@@ -59,6 +59,11 @@ https://kinderwitzemaschine.duckdns.org/mcp
 https://kinderwitzemaschine.duckdns.org/datenschutz
 ```
 
+### Company / Homepage URL
+```
+https://kinderwitzemaschine.duckdns.org
+```
+
 ### Customer Support Contact
 ```
 system.reset.all@gmail.com
@@ -84,26 +89,51 @@ Diese Prompts musst du bei OpenAI eintragen damit die Reviewer die App testen k�
 ```
 Tell me a random children's joke
 ```
-**Erwartete Antwort:** Ein zufälliger Witz aus der Datenbank im Format:
-"Kategorie: [Name] | ❓ [Frage] | 😄 [Antwort]"
+**Erwartete Antwort (Beispiel):**
+```
+🎉 Here is a German children's joke!
+
+❓ Warum können Elefanten nicht Fahrrad fahren?
+😄 Weil sie keinen Daumen haben, um zu klingeln!
+
+📂 Category: Tiere
+```
 
 ### Test Prompt 2
 ```
 Give me a children's joke about animals
 ```
-**Erwartete Antwort:** Ein Witz aus der Kategorie "Tiere"
+**Erwartete Antwort (Beispiel):**
+```
+🎉 A joke from the category "Tiere":
+
+❓ Was macht ein Krokodil, wenn es Hunger hat?
+😄 Es beißt sich durch!
+```
 
 ### Test Prompt 3
 ```
 Search for a children's joke about elephants
 ```
-**Erwartete Antwort:** Witz mit "Elefant" in Frage oder Antwort
+**Erwartete Antwort (Beispiel):**
+```
+🔍 Found 3 joke(s) for "elephants":
+
+❓ Wie nennt man einen Elefanten, der im Schulbus sitzt?
+😄 Den Klassenschwergewichtler!
+```
 
 ### Test Prompt 4 (Deutsch)
 ```
 Erzähl mir einen Witz über die Schule
 ```
-**Erwartete Antwort:** Ein Witz aus der Kategorie "Schule"
+**Erwartete Antwort (Beispiel):**
+```
+🎉 A joke from the category "Schule":
+
+❓ Warum bringt der Lehrer einen Bleistift mit ins Bett?
+😄 Um seine Träume aufzuschreiben!
+```
 
 ---
 
