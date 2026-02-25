@@ -65,10 +65,12 @@ app.post("/mcp", async (req, res) => {
     {
       title: "Get a Children's Joke by Category",
       description:
-        "Returns a German children's joke from a specific category. " +
+        "Returns a German children's joke from a broad category. " +
         "Available categories: Tiere (Animals), Schule (School), Essen (Food), " +
         "Familie (Family), Sport (Sports), Fantasie (Fantasy). " +
-        "Use this when the user asks for jokes about a specific topic.",
+        "Use this ONLY when the user asks for a general topic like 'animals' or 'school' " +
+        "WITHOUT naming a specific subject. " +
+        "If the user names something specific like 'elephant', 'donkey', or 'pizza', use search_jokes instead.",
       annotations: { readOnlyHint: true, destructiveHint: false, openWorldHint: false },
       inputSchema: z.object({
         category: z
@@ -100,9 +102,10 @@ app.post("/mcp", async (req, res) => {
     {
       title: "Search Children's Jokes by Keyword",
       description:
-        "Searches German children's jokes by keyword in German or English. " +
-        "If no exact match is found, automatically returns a random joke as a friendly fallback. " +
-        "Examples: 'elephant', 'Elefant', 'pizza', 'dragon', 'Schule', 'school'.",
+        "Searches German children's jokes by a specific keyword in German or English. " +
+        "ALWAYS use this tool when the user mentions a specific subject like 'elephant', 'donkey', " +
+        "'pizza', 'dragon', 'teacher', or any particular thing. " +
+        "If no match is found, automatically returns a random joke as a friendly fallback.",
       annotations: { readOnlyHint: true, destructiveHint: false, openWorldHint: false },
       inputSchema: z.object({
         keyword: z
