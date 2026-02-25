@@ -1,0 +1,1722 @@
+[
+  {
+    "id": "001",
+    "kategorie": "Tiere",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum können Elefanten nicht Fahrrad fahren?",
+    "antwort": "Weil sie keinen Daumen zum Klingeln haben!"
+  },
+  {
+    "id": "002",
+    "kategorie": "Tiere",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was macht ein Hund im Schnee?",
+    "antwort": "Er wird zum Hotdog!"
+  },
+  {
+    "id": "003",
+    "kategorie": "Tiere",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum hat die Katze kein Geld?",
+    "antwort": "Weil sie immer auf der Lauer liegt!"
+  },
+  {
+    "id": "004",
+    "kategorie": "Tiere",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was sagt eine Kuh, die keine Milch mehr gibt?",
+    "antwort": "Das ist doch zum Muh-len!"
+  },
+  {
+    "id": "005",
+    "kategorie": "Tiere",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Welches Tier schläft am längsten?",
+    "antwort": "Das Murmeltier – es hat den besten Wecker!"
+  },
+  {
+    "id": "006",
+    "kategorie": "Tiere",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum trägt ein Frosch keine Hose?",
+    "antwort": "Weil er schon Springerstiefel hat!"
+  },
+  {
+    "id": "007",
+    "kategorie": "Tiere",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was ist ein Schaf, das rückwärts läuft?",
+    "antwort": "Ein Fahs!"
+  },
+  {
+    "id": "008",
+    "kategorie": "Tiere",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Warum kann man mit einem Fisch nicht Karten spielen?",
+    "antwort": "Weil er immer ins Wasser schaut!"
+  },
+  {
+    "id": "009",
+    "kategorie": "Tiere",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was macht ein Bär, wenn er im Regen tanzt?",
+    "antwort": "Er wird zum Teddybär – nass und flauschig!"
+  },
+  {
+    "id": "010",
+    "kategorie": "Tiere",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum haben Vögel keine Hände?",
+    "antwort": "Weil sie sonst keine Flügel mehr hätten!"
+  },
+  {
+    "id": "011",
+    "kategorie": "Tiere",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was sagt der Pinguin zu seiner Mutter?",
+    "antwort": "Du bist die Coolste!"
+  },
+  {
+    "id": "012",
+    "kategorie": "Tiere",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum läuft ein Hamster so schnell im Rad?",
+    "antwort": "Weil er den Zug nicht verpassen will!"
+  },
+  {
+    "id": "013",
+    "kategorie": "Tiere",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Was ist ein Krokodil mit Weste?",
+    "antwort": "Ein Ermitt-ler!"
+  },
+  {
+    "id": "014",
+    "kategorie": "Tiere",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum hat der Tintenfisch so viele Arme?",
+    "antwort": "Weil er immer vieles auf einmal erledigen will!"
+  },
+  {
+    "id": "015",
+    "kategorie": "Tiere",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was sagt die Schnecke auf dem Rücken des Schildkröte?",
+    "antwort": "Bitte nicht so schnell!"
+  },
+  {
+    "id": "016",
+    "kategorie": "Tiere",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum geht die Ente immer zuerst ins Wasser?",
+    "antwort": "Damit der Rest quak-frei schwimmen kann!"
+  },
+  {
+    "id": "017",
+    "kategorie": "Tiere",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was macht ein Zebra in der Bibliothek?",
+    "antwort": "Es sucht Bücher mit Streifen!"
+  },
+  {
+    "id": "018",
+    "kategorie": "Tiere",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum schläft der Hase auf dem Feld?",
+    "antwort": "Weil er keinen Schlüssel für sein Hasenstall-Hotel hat!"
+  },
+  {
+    "id": "019",
+    "kategorie": "Tiere",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was ist ein Hund ohne Beine?",
+    "antwort": "Eine Wurst!"
+  },
+  {
+    "id": "020",
+    "kategorie": "Tiere",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Warum fliegt der Adler so hoch?",
+    "antwort": "Weil er den Überblick behalten möchte!"
+  },
+  {
+    "id": "021",
+    "kategorie": "Tiere",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was fragt der eine Wurm den anderen?",
+    "antwort": "Wohnst du auch in der Erdgeschoss-Wohnung?"
+  },
+  {
+    "id": "022",
+    "kategorie": "Tiere",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum weint die Giraffe nicht?",
+    "antwort": "Weil die Tränen zu lang sind, bevor sie ankommen!"
+  },
+  {
+    "id": "023",
+    "kategorie": "Tiere",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was macht ein Eisbär am Computer?",
+    "antwort": "Er surft im Netz – auf der Suche nach Fischen!"
+  },
+  {
+    "id": "024",
+    "kategorie": "Tiere",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum haben Katzen weiche Pfoten?",
+    "antwort": "Damit sie nicht auf die Klingel drücken müssen – sie schleichen einfach rein!"
+  },
+  {
+    "id": "025",
+    "kategorie": "Tiere",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Was sagt der Hahn jeden Morgen?",
+    "antwort": "Aufstehen, ihr Schlafmützen – ich mach das schon wieder umsonst!"
+  },
+  {
+    "id": "026",
+    "kategorie": "Tiere",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum macht der Affe immer Quatsch?",
+    "antwort": "Weil er einen Affenzahn hat!"
+  },
+  {
+    "id": "027",
+    "kategorie": "Tiere",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was macht ein Fisch in der Schule?",
+    "antwort": "Er lernt schwimmen – aber das kann er schon!"
+  },
+  {
+    "id": "028",
+    "kategorie": "Tiere",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum ist der Elefant so vergesslich?",
+    "antwort": "Das stimmt gar nicht – er vergisst nie etwas! Aber er erzählt das gerne so!"
+  },
+  {
+    "id": "029",
+    "kategorie": "Tiere",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was ist der Unterschied zwischen einem Hund und einem Floh?",
+    "antwort": "Ein Hund kann Flöhe haben, aber ein Floh kann keine Hunde haben!"
+  },
+  {
+    "id": "030",
+    "kategorie": "Tiere",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Warum trinkt ein Pferd so viel Wasser?",
+    "antwort": "Weil es weiß: Ohne Wasser wird es ein Trockenpferd!"
+  },
+  {
+    "id": "031",
+    "kategorie": "Tiere",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was macht eine Biene, wenn sie keinen Honig mehr hat?",
+    "antwort": "Sie geht zum Bienenmarkt einkaufen!"
+  },
+  {
+    "id": "032",
+    "kategorie": "Tiere",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum sind Fische so klug?",
+    "antwort": "Weil sie immer im Rudel schwimmen – Schwarmintelligenz!"
+  },
+  {
+    "id": "033",
+    "kategorie": "Tiere",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was sagt eine Kuh, wenn sie sich freut?",
+    "antwort": "Ich bin muh-tig glücklich!"
+  },
+  {
+    "id": "034",
+    "kategorie": "Tiere",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum geht der Wolf nicht in die Schule?",
+    "antwort": "Weil er schon zu viele Märchen gelesen hat!"
+  },
+  {
+    "id": "035",
+    "kategorie": "Tiere",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was macht ein Kaninchen, wenn es traurig ist?",
+    "antwort": "Es hoppelt zur Karotten-Therapie!"
+  },
+  {
+    "id": "036",
+    "kategorie": "Tiere",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum ist die Schildkröte so langsam?",
+    "antwort": "Weil sie immer ihr Haus mitträgt – das ist ganz schön schwer!"
+  },
+  {
+    "id": "037",
+    "kategorie": "Tiere",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was macht ein Schwein beim Kochen?",
+    "antwort": "Es rührt im Topf mit dem Ringel-Schwanz!"
+  },
+  {
+    "id": "038",
+    "kategorie": "Tiere",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Warum mag der Delfin keine langen Witze?",
+    "antwort": "Weil er immer an die Oberfläche muss, bevor die Pointe kommt!"
+  },
+  {
+    "id": "039",
+    "kategorie": "Tiere",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was sagt der kleine Vogel zu seiner Mama?",
+    "antwort": "Du bist die Piepste!"
+  },
+  {
+    "id": "040",
+    "kategorie": "Tiere",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum läuft der Fuchs so schlau?",
+    "antwort": "Weil er immer einen Fuchsschwanz als Reserveplan hat!"
+  },
+  {
+    "id": "041",
+    "kategorie": "Schule",
+    "alter_min": 6,
+    "alter_max": 12,
+    "frage": "Warum hat der Bleistift die Prüfung bestanden?",
+    "antwort": "Weil er die Lösung hatte!"
+  },
+  {
+    "id": "042",
+    "kategorie": "Schule",
+    "alter_min": 6,
+    "alter_max": 12,
+    "frage": "Was ist der Lieblingstag eines Lehrers?",
+    "antwort": "Feierabend!"
+  },
+  {
+    "id": "043",
+    "kategorie": "Schule",
+    "alter_min": 6,
+    "alter_max": 12,
+    "frage": "Warum bringt der Schüler eine Leiter in die Schule?",
+    "antwort": "Weil er in die Oberstufe will!"
+  },
+  {
+    "id": "044",
+    "kategorie": "Schule",
+    "alter_min": 6,
+    "alter_max": 12,
+    "frage": "Was sagt das Schulheft zum Stift?",
+    "antwort": "Schreib mir mal wieder!"
+  },
+  {
+    "id": "045",
+    "kategorie": "Schule",
+    "alter_min": 6,
+    "alter_max": 12,
+    "frage": "Warum ist der Radiergummi so traurig?",
+    "antwort": "Weil er immer ausgelöscht wird!"
+  },
+  {
+    "id": "046",
+    "kategorie": "Schule",
+    "alter_min": 6,
+    "alter_max": 12,
+    "frage": "Was macht der Globus in der Schule?",
+    "antwort": "Er dreht sich im Kreis – wie alle anderen auch!"
+  },
+  {
+    "id": "047",
+    "kategorie": "Schule",
+    "alter_min": 6,
+    "alter_max": 12,
+    "frage": "Warum schläft der Schüler im Unterricht?",
+    "antwort": "Weil der Lehrer so spannend ist – oder doch nicht?"
+  },
+  {
+    "id": "048",
+    "kategorie": "Schule",
+    "alter_min": 6,
+    "alter_max": 12,
+    "frage": "Was ist der Unterschied zwischen einem Schüler und einer Pizza?",
+    "antwort": "Eine Pizza kann man auch warm essen!"
+  },
+  {
+    "id": "049",
+    "kategorie": "Schule",
+    "alter_min": 6,
+    "alter_max": 12,
+    "frage": "Warum hat das Lineal so viele Striche?",
+    "antwort": "Weil es zählen muss, wie viele Schüler es vermessen hat!"
+  },
+  {
+    "id": "050",
+    "kategorie": "Schule",
+    "alter_min": 6,
+    "alter_max": 12,
+    "frage": "Was sagt der Stundenplan zum Schüler?",
+    "antwort": "Ich hab dich vollkommen in der Hand!"
+  },
+  {
+    "id": "051",
+    "kategorie": "Schule",
+    "alter_min": 7,
+    "alter_max": 12,
+    "frage": "Warum ist Mathe wie eine Erkältung?",
+    "antwort": "Beides hat man schnell und beide kommen immer wieder!"
+  },
+  {
+    "id": "052",
+    "kategorie": "Schule",
+    "alter_min": 6,
+    "alter_max": 12,
+    "frage": "Was macht der Spitzer in der Pause?",
+    "antwort": "Er schärft seinen Witz!"
+  },
+  {
+    "id": "053",
+    "kategorie": "Schule",
+    "alter_min": 6,
+    "alter_max": 12,
+    "frage": "Warum fragt der Lehrer immer wieder dieselben Fragen?",
+    "antwort": "Weil er hofft, dass irgendwann jemand antwortet!"
+  },
+  {
+    "id": "054",
+    "kategorie": "Schule",
+    "alter_min": 6,
+    "alter_max": 12,
+    "frage": "Was ist das coolste Fach in der Schule?",
+    "antwort": "Physik – wegen der coolen Versuche natürlich!"
+  },
+  {
+    "id": "055",
+    "kategorie": "Schule",
+    "alter_min": 6,
+    "alter_max": 12,
+    "frage": "Warum ist der Schulbus immer so voll?",
+    "antwort": "Weil alle Schüler gleichzeitig in die Schule müssen!"
+  },
+  {
+    "id": "056",
+    "kategorie": "Schule",
+    "alter_min": 7,
+    "alter_max": 12,
+    "frage": "Was sagt der Taschenrechner zur Matheaufgabe?",
+    "antwort": "Ich rechne das in Nullkommanix!"
+  },
+  {
+    "id": "057",
+    "kategorie": "Schule",
+    "alter_min": 6,
+    "alter_max": 12,
+    "frage": "Warum bringt der Schüler keinen Regenschirm mit?",
+    "antwort": "Weil er hofft, dass die Schule ausfällt!"
+  },
+  {
+    "id": "058",
+    "kategorie": "Schule",
+    "alter_min": 6,
+    "alter_max": 12,
+    "frage": "Was ist der Lieblingsplatz eines Schülers?",
+    "antwort": "Die letzte Reihe – da sieht der Lehrer nicht alles!"
+  },
+  {
+    "id": "059",
+    "kategorie": "Schule",
+    "alter_min": 7,
+    "alter_max": 12,
+    "frage": "Warum ist ein Schulbuch wie ein guter Freund?",
+    "antwort": "Es hat immer die richtigen Antworten – aber nur wenn man reinschaut!"
+  },
+  {
+    "id": "060",
+    "kategorie": "Schule",
+    "alter_min": 6,
+    "alter_max": 12,
+    "frage": "Was macht das Geographiebuch nach der Schule?",
+    "antwort": "Es geht auf Reisen!"
+  },
+  {
+    "id": "061",
+    "kategorie": "Schule",
+    "alter_min": 6,
+    "alter_max": 12,
+    "frage": "Warum hat der Schüler immer einen Apfel für den Lehrer?",
+    "antwort": "Damit der Lehrer sweet bleibt!"
+  },
+  {
+    "id": "062",
+    "kategorie": "Schule",
+    "alter_min": 6,
+    "alter_max": 12,
+    "frage": "Was sagt die Kreide zur Tafel?",
+    "antwort": "Ich habe ein Zeichen für dich!"
+  },
+  {
+    "id": "063",
+    "kategorie": "Schule",
+    "alter_min": 7,
+    "alter_max": 12,
+    "frage": "Warum ist Deutsch manchmal schwer?",
+    "antwort": "Weil der Dativ dem Genitiv sein Tod ist – oder so ähnlich!"
+  },
+  {
+    "id": "064",
+    "kategorie": "Schule",
+    "alter_min": 6,
+    "alter_max": 12,
+    "frage": "Was macht der Schüler, wenn er den Unterricht nicht versteht?",
+    "antwort": "Er nickt einfach und hofft auf das Beste!"
+  },
+  {
+    "id": "065",
+    "kategorie": "Schule",
+    "alter_min": 6,
+    "alter_max": 12,
+    "frage": "Warum freut sich der Schwamm an der Tafel?",
+    "antwort": "Weil er alles ausradieren darf!"
+  },
+  {
+    "id": "066",
+    "kategorie": "Schule",
+    "alter_min": 6,
+    "alter_max": 12,
+    "frage": "Was hat der Schüler gemacht, als er seinen Rucksack vergessen hat?",
+    "antwort": "Er hat einfach nichts abgegeben – planmäßig!"
+  },
+  {
+    "id": "067",
+    "kategorie": "Schule",
+    "alter_min": 6,
+    "alter_max": 12,
+    "frage": "Warum hat der Pinsel Kunstunterricht gemocht?",
+    "antwort": "Weil er dabei immer strahlen durfte!"
+  },
+  {
+    "id": "068",
+    "kategorie": "Schule",
+    "alter_min": 6,
+    "alter_max": 12,
+    "frage": "Was sagt der Schulhof zum Pausenklingeln?",
+    "antwort": "Endlich – da ist mein Lieblingsgeräusch!"
+  },
+  {
+    "id": "069",
+    "kategorie": "Schule",
+    "alter_min": 6,
+    "alter_max": 12,
+    "frage": "Warum ist das Sportfach so beliebt?",
+    "antwort": "Weil man da nicht still sitzen muss!"
+  },
+  {
+    "id": "070",
+    "kategorie": "Schule",
+    "alter_min": 6,
+    "alter_max": 12,
+    "frage": "Was macht ein Schüler am letzten Schultag?",
+    "antwort": "Er trägt sein Zeugnis triumphierend nach Hause – egal welche Note!"
+  },
+  {
+    "id": "071",
+    "kategorie": "Schule",
+    "alter_min": 6,
+    "alter_max": 12,
+    "frage": "Warum hat die Schere in der Schule so viel Arbeit?",
+    "antwort": "Weil immer etwas auseinandergeschnitten werden muss!"
+  },
+  {
+    "id": "072",
+    "kategorie": "Schule",
+    "alter_min": 6,
+    "alter_max": 12,
+    "frage": "Was sagt der Klebstoff zum Bastelunterricht?",
+    "antwort": "Ich halte das hier zusammen!"
+  },
+  {
+    "id": "073",
+    "kategorie": "Schule",
+    "alter_min": 6,
+    "alter_max": 12,
+    "frage": "Warum freut sich der Zirkel im Matheunterricht?",
+    "antwort": "Weil er immer im Mittelpunkt steht!"
+  },
+  {
+    "id": "074",
+    "kategorie": "Schule",
+    "alter_min": 6,
+    "alter_max": 12,
+    "frage": "Was hat der Schüler beim Diktat falsch gemacht?",
+    "antwort": "Er hat vergessen, die Fehler zu verstecken!"
+  },
+  {
+    "id": "075",
+    "kategorie": "Schule",
+    "alter_min": 6,
+    "alter_max": 12,
+    "frage": "Warum lacht das Bücherregal in der Schule?",
+    "antwort": "Weil die Bücher alle gute Witze kennen!"
+  },
+  {
+    "id": "076",
+    "kategorie": "Essen",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum weinen Zwiebeln?",
+    "antwort": "Weil niemand sie mag!"
+  },
+  {
+    "id": "077",
+    "kategorie": "Essen",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Was ist das Lieblingsessen eines Mathematikers?",
+    "antwort": "Pi(zza)!"
+  },
+  {
+    "id": "078",
+    "kategorie": "Essen",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum geht die Banane nie allein aus dem Haus?",
+    "antwort": "Sie hat immer eine Schale dabei!"
+  },
+  {
+    "id": "079",
+    "kategorie": "Essen",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was sagt die Tomate zur Gurke?",
+    "antwort": "Du bist so cool, ich werde rot!"
+  },
+  {
+    "id": "080",
+    "kategorie": "Essen",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum hat das Brot keine Freunde?",
+    "antwort": "Weil es immer getoastet wird!"
+  },
+  {
+    "id": "081",
+    "kategorie": "Essen",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was macht ein Apfel, wenn er traurig ist?",
+    "antwort": "Er wird zum Apfelmus!"
+  },
+  {
+    "id": "082",
+    "kategorie": "Essen",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum ist die Spaghetti so lang?",
+    "antwort": "Weil sie nicht abgekürzt werden wollte!"
+  },
+  {
+    "id": "083",
+    "kategorie": "Essen",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was sagt der Käse zur Maus?",
+    "antwort": "Komm näher – ich bin nicht so löchrig, wie ich aussehe!"
+  },
+  {
+    "id": "084",
+    "kategorie": "Essen",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum lacht der Joghurt immer?",
+    "antwort": "Weil er kultiviert ist!"
+  },
+  {
+    "id": "085",
+    "kategorie": "Essen",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was macht die Erdbeere bei der Disco?",
+    "antwort": "Sie wird zur wilden Beere!"
+  },
+  {
+    "id": "086",
+    "kategorie": "Essen",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum hat das Ei so viele Freunde?",
+    "antwort": "Weil es immer sunny side up ist!"
+  },
+  {
+    "id": "087",
+    "kategorie": "Essen",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Was sagt der Spinat zur Gabel?",
+    "antwort": "Stich mich nicht so – ich bin schon weich genug!"
+  },
+  {
+    "id": "088",
+    "kategorie": "Essen",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum geht die Möhre so gerne in die Sauna?",
+    "antwort": "Damit sie noch mehr Karotte wird!"
+  },
+  {
+    "id": "089",
+    "kategorie": "Essen",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was macht ein Keks, wenn er nass wird?",
+    "antwort": "Er bröckelt – aber er gibt nicht auf!"
+  },
+  {
+    "id": "090",
+    "kategorie": "Essen",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum ist die Karotte so beliebt?",
+    "antwort": "Weil sie immer sieht, was auf sie zukommt!"
+  },
+  {
+    "id": "091",
+    "kategorie": "Essen",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was sagt der Kuchen zum Geburtstag?",
+    "antwort": "Ich bin der Haupt-Darsteller heute!"
+  },
+  {
+    "id": "092",
+    "kategorie": "Essen",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum mag die Suppe keine Löffel?",
+    "antwort": "Weil sie immer ausgelöffelt wird!"
+  },
+  {
+    "id": "093",
+    "kategorie": "Essen",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was sagt die Orange zur Zitrone?",
+    "antwort": "Du bist etwas sauer, aber ich mag dich trotzdem!"
+  },
+  {
+    "id": "094",
+    "kategorie": "Essen",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum singt die Nudel so gern?",
+    "antwort": "Weil sie eine echte Pasta-Performance liebt!"
+  },
+  {
+    "id": "095",
+    "kategorie": "Essen",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was macht das Eis im Sommer?",
+    "antwort": "Es versucht, cool zu bleiben!"
+  },
+  {
+    "id": "096",
+    "kategorie": "Essen",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum hat die Wassermelone so eine dicke Schale?",
+    "antwort": "Damit sie beim Fallen nicht zu Marmelade wird!"
+  },
+  {
+    "id": "097",
+    "kategorie": "Essen",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was sagt der Teller zum Löffel?",
+    "antwort": "Du hebst mich ab!"
+  },
+  {
+    "id": "098",
+    "kategorie": "Essen",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum ist das Frühstück so wichtig?",
+    "antwort": "Weil es der erste Schritt zum Mittagessen ist!"
+  },
+  {
+    "id": "099",
+    "kategorie": "Essen",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was macht eine Birne, wenn sie sportlich ist?",
+    "antwort": "Sie macht Birnen-Turnen!"
+  },
+  {
+    "id": "100",
+    "kategorie": "Essen",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Warum hat der Hamburger so viele Schichten?",
+    "antwort": "Weil er viele Layers hat – wie ein gutes Buch!"
+  },
+  {
+    "id": "101",
+    "kategorie": "Essen",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was sagt die Pommes zur Ketchupflasche?",
+    "antwort": "Komm, wir gehen zusammen!"
+  },
+  {
+    "id": "102",
+    "kategorie": "Essen",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum mag der Brokkoli Kinder?",
+    "antwort": "Weil er so gerne angebissen wird – er hofft, dass es diesmal klappt!"
+  },
+  {
+    "id": "103",
+    "kategorie": "Essen",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was macht eine Kartoffel in der Badewanne?",
+    "antwort": "Sie wird zur Badetoffel!"
+  },
+  {
+    "id": "104",
+    "kategorie": "Essen",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum ist Schokolade so glücklich?",
+    "antwort": "Weil sie immer schmelzen darf – was für ein schönes Leben!"
+  },
+  {
+    "id": "105",
+    "kategorie": "Essen",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was sagt die Brezel zu sich selbst?",
+    "antwort": "Ich bin in einer verdrehten Situation!"
+  },
+  {
+    "id": "106",
+    "kategorie": "Essen",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum hat das Müsli so viele Freunde?",
+    "antwort": "Weil es mit allen gut klar kommt – Nüsse, Rosinen, Haferflocken!"
+  },
+  {
+    "id": "107",
+    "kategorie": "Essen",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was macht der Pfannkuchen, wenn er aufgeregt ist?",
+    "antwort": "Er wird ganz flach vor Aufregung!"
+  },
+  {
+    "id": "108",
+    "kategorie": "Essen",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum hat die Pfirsich so eine weiche Haut?",
+    "antwort": "Weil sie immer gepflegt wird!"
+  },
+  {
+    "id": "109",
+    "kategorie": "Essen",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was sagt der Senf zur Wurst?",
+    "antwort": "Ohne mich bist du nur halb so gut!"
+  },
+  {
+    "id": "110",
+    "kategorie": "Essen",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum ist die Zitrone so fit?",
+    "antwort": "Weil sie täglich Vitamin C tankt!"
+  },
+  {
+    "id": "111",
+    "kategorie": "Familie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was sagt der Papa-Keks zur Mama-Keks?",
+    "antwort": "Unser Kind ist ein echtes Stück!"
+  },
+  {
+    "id": "112",
+    "kategorie": "Familie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum hat die Oma immer Bonbons in der Tasche?",
+    "antwort": "Weil das die Geheimwaffe gegen Langeweile ist!"
+  },
+  {
+    "id": "113",
+    "kategorie": "Familie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was sagt der Opa zum Enkel?",
+    "antwort": "Du bist mein Lieblings-Enkelsohn – aber sag das deinen Geschwistern nicht!"
+  },
+  {
+    "id": "114",
+    "kategorie": "Familie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum lacht Papa immer über seine eigenen Witze?",
+    "antwort": "Weil er der einzige ist, der sie versteht!"
+  },
+  {
+    "id": "115",
+    "kategorie": "Familie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was macht Mama, wenn Papa schnarcht?",
+    "antwort": "Sie erfindet immer neue Superkräfte zum Wachbleiben!"
+  },
+  {
+    "id": "116",
+    "kategorie": "Familie",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Warum ist ein Geschwisterstreit wie ein Gewitter?",
+    "antwort": "Es donnert laut, aber danach ist die Luft wieder klar!"
+  },
+  {
+    "id": "117",
+    "kategorie": "Familie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was sagt das Sofa zur Familie?",
+    "antwort": "Ich liebe es, wenn ihr alle auf mir sitzt – außer wenn ihr Chips esst!"
+  },
+  {
+    "id": "118",
+    "kategorie": "Familie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum hat Papa immer das letzte Wort?",
+    "antwort": "Weil danach Mama redet!"
+  },
+  {
+    "id": "119",
+    "kategorie": "Familie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was macht die Tante bei jedem Besuch?",
+    "antwort": "Sie knuddelt alle und fragt: Wie groß du geworden bist!"
+  },
+  {
+    "id": "120",
+    "kategorie": "Familie",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Warum packt der Onkel immer zu viel ein, wenn er zu Besuch kommt?",
+    "antwort": "Weil er die Kinder gerne beschenkt – und die Eltern beschäftigt!"
+  },
+  {
+    "id": "121",
+    "kategorie": "Familie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was sagt der kleine Bruder zum großen?",
+    "antwort": "Ich kopiere dich – aber besser!"
+  },
+  {
+    "id": "122",
+    "kategorie": "Familie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum hat die große Schwester so viele Geheimnisse?",
+    "antwort": "Weil sie schon mehr erlebt hat – oder so tut als ob!"
+  },
+  {
+    "id": "123",
+    "kategorie": "Familie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was macht Papa am Wochenende am liebsten?",
+    "antwort": "Schlafen – und dann so tun, als ob er geholfen hätte!"
+  },
+  {
+    "id": "124",
+    "kategorie": "Familie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum kocht Mama das beste Essen?",
+    "antwort": "Weil sie die Geheimzutat Liebe verwendet – und manchmal auch Salz!"
+  },
+  {
+    "id": "125",
+    "kategorie": "Familie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was sagt das Auto der Familie?",
+    "antwort": "Ich kenne jede Urlaubsroute auswendig – und jeden Streit dazu!"
+  },
+  {
+    "id": "126",
+    "kategorie": "Familie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum ist Familienausflug wie Tetris?",
+    "antwort": "Man muss alle irgendwie reinbekommen!"
+  },
+  {
+    "id": "127",
+    "kategorie": "Familie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was sagt Oma beim Abendessen immer?",
+    "antwort": "Iss auf – die Kinder in Afrika wären froh drum!"
+  },
+  {
+    "id": "128",
+    "kategorie": "Familie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum hat der Opa so viele Geschichten?",
+    "antwort": "Weil er schon so lange lebt und alles miterlebt hat – na ja, fast alles!"
+  },
+  {
+    "id": "129",
+    "kategorie": "Familie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was macht die Familie am liebsten im Urlaub?",
+    "antwort": "Streiten – aber mit Meerblick!"
+  },
+  {
+    "id": "130",
+    "kategorie": "Familie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum singt Papa immer falsch?",
+    "antwort": "Weil er denkt, laut ist das gleiche wie richtig!"
+  },
+  {
+    "id": "131",
+    "kategorie": "Familie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was sagt die Badewanne zur Familie?",
+    "antwort": "Bitte nicht alle auf einmal!"
+  },
+  {
+    "id": "132",
+    "kategorie": "Familie",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Warum ist der Kühlschrank das beliebteste Familienmitglied?",
+    "antwort": "Weil er immer was zu bieten hat und nie schlechte Laune hat!"
+  },
+  {
+    "id": "133",
+    "kategorie": "Familie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was macht der Familienhund bei jedem Heimkommen?",
+    "antwort": "Er freut sich so, als ob man hundert Jahre weg war – selbst wenn es nur fünf Minuten waren!"
+  },
+  {
+    "id": "134",
+    "kategorie": "Familie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum gibt es beim Familienfoto immer einen mit geschlossenen Augen?",
+    "antwort": "Weil das Gesetz der Familie es so verlangt!"
+  },
+  {
+    "id": "135",
+    "kategorie": "Familie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was sagt der Fernseher zur Familie?",
+    "antwort": "Ich bin der einzige, dem ihr alle zuhört!"
+  },
+  {
+    "id": "136",
+    "kategorie": "Familie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum ist Mama immer so gut organisiert?",
+    "antwort": "Weil sie sonst im Chaos versinken würde – das macht ja Papa schon alleine!"
+  },
+  {
+    "id": "137",
+    "kategorie": "Familie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was sagt der kleine Cousin beim Spielen?",
+    "antwort": "Meine Regeln – immer!"
+  },
+  {
+    "id": "138",
+    "kategorie": "Familie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum weckt Mama alle am Wochenende früh auf?",
+    "antwort": "Damit auch sie endlich ausschlafen kann, sobald alle draußen sind!"
+  },
+  {
+    "id": "139",
+    "kategorie": "Familie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was macht Papa, wenn er ein neues Gerät kauft?",
+    "antwort": "Er baut es alleine auf – und fragt dann die Kinder, warum es nicht klappt!"
+  },
+  {
+    "id": "140",
+    "kategorie": "Familie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum ist ein Baby das lustigste Familienmitglied?",
+    "antwort": "Weil es immer lacht – außer nachts!"
+  },
+  {
+    "id": "141",
+    "kategorie": "Familie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was sagt die Waschmaschine zur Mama?",
+    "antwort": "Ich kenne alle eure Schmutzgeheimnisse!"
+  },
+  {
+    "id": "142",
+    "kategorie": "Familie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum bekommt der Bruder immer mehr Taschengeld?",
+    "antwort": "Das stimmt gar nicht – das bildet man sich nur immer ein!"
+  },
+  {
+    "id": "143",
+    "kategorie": "Familie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was macht Oma am besten?",
+    "antwort": "Kuchen backen und Umarmungen verteilen – und das gleichzeitig!"
+  },
+  {
+    "id": "144",
+    "kategorie": "Familie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum ist Familienabend wie ein Puzzle?",
+    "antwort": "Alle Teile müssen zusammenpassen – und manchmal fehlt einer!"
+  },
+  {
+    "id": "145",
+    "kategorie": "Familie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was sagt der Papa zum Kind vor dem Schlafengehen?",
+    "antwort": "Gute Nacht – morgen früh gibt es wieder Witze!"
+  },
+  {
+    "id": "146",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Warum spielt das Skelett nicht Fußball?",
+    "antwort": "Weil es keinen Biss hat!"
+  },
+  {
+    "id": "147",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Was macht ein Schwimmer im Winter?",
+    "antwort": "Er macht Eis-Bahn!"
+  },
+  {
+    "id": "148",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Warum laufen Sprinter so schnell?",
+    "antwort": "Weil sie nicht gerne langsam gehen – das nennt man Spaziergang!"
+  },
+  {
+    "id": "149",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Was sagt der Ball zum Torwart?",
+    "antwort": "Du wirst mich nicht aufhalten!"
+  },
+  {
+    "id": "150",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Warum hat der Tennisspieler immer einen Schläger dabei?",
+    "antwort": "Weil man mit der Hand schlechter trifft!"
+  },
+  {
+    "id": "151",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Was macht ein Radfahrer am Berg?",
+    "antwort": "Er tritt in die Pedale – und flucht leise!"
+  },
+  {
+    "id": "152",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Warum spielen Geister nicht Basketball?",
+    "antwort": "Weil sie immer durch den Korb fallen!"
+  },
+  {
+    "id": "153",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Was sagt der Boxhandschuh zum Gegner?",
+    "antwort": "Ich freu mich auf dich – aber du weniger auf mich!"
+  },
+  {
+    "id": "154",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Warum ist Turnen so anstrengend?",
+    "antwort": "Weil man sich dabei so oft dreht, dass man den Weg nach Hause vergisst!"
+  },
+  {
+    "id": "155",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Was macht ein Taucher bei Regen?",
+    "antwort": "Nichts – er ist das schon gewohnt!"
+  },
+  {
+    "id": "156",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Warum hat der Golfer immer einen Schirm dabei?",
+    "antwort": "Weil er nie weiß, in welches Loch der Ball als nächstes fliegt!"
+  },
+  {
+    "id": "157",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Was sagt die Turnmatte zum Turner?",
+    "antwort": "Ich fang dich auf – keine Sorge!"
+  },
+  {
+    "id": "158",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Warum macht ein Skispringer so eine große Reise?",
+    "antwort": "Weil er einfach gerne fliegt!"
+  },
+  {
+    "id": "159",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Was macht ein Volleyballspieler, wenn er traurig ist?",
+    "antwort": "Er haut ab – den Ball natürlich!"
+  },
+  {
+    "id": "160",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Warum ist Schwimmen so gesund?",
+    "antwort": "Weil man dabei nie nass wird – nein, warte..."
+  },
+  {
+    "id": "161",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Was sagt der Fußball zum Netz?",
+    "antwort": "Heute Nacht gehöre ich dir!"
+  },
+  {
+    "id": "162",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Warum macht der Eisläufer immer Figuren?",
+    "antwort": "Weil er auf glattem Eis steht und keine Wahl hat!"
+  },
+  {
+    "id": "163",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Was macht ein Bogenschütze im Regen?",
+    "antwort": "Er zielt auf den nächsten trockenen Platz!"
+  },
+  {
+    "id": "164",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Warum haben Sportler immer große Taschen?",
+    "antwort": "Weil ihr Ehrgeiz so groß ist, dass er hineinpassen muss!"
+  },
+  {
+    "id": "165",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Was sagt die Ziellinie zum Läufer?",
+    "antwort": "Ich warte schon die ganze Zeit auf dich!"
+  },
+  {
+    "id": "166",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Warum springt der Weitspringer so weit?",
+    "antwort": "Weil der kurze Sprung schon mal jemand anderes gemacht hat!"
+  },
+  {
+    "id": "167",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Was macht ein Judokämpfer beim Einschlafen?",
+    "antwort": "Er wirft sein Kissen auf die Matte!"
+  },
+  {
+    "id": "168",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Warum trägt ein Basketballspieler so hohe Schuhe?",
+    "antwort": "Damit er noch näher am Korb ist!"
+  },
+  {
+    "id": "169",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Was sagt die Staffel zum letzten Läufer?",
+    "antwort": "Du trägst das Stab-Ende – buchstäblich!"
+  },
+  {
+    "id": "170",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Warum hat ein Karatekämpfer immer gute Laune?",
+    "antwort": "Weil er immer Durchschlagevermögen hat!"
+  },
+  {
+    "id": "171",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Was macht ein Segler bei Flaute?",
+    "antwort": "Er wartet – er ist trainiert im Geduld-Sport!"
+  },
+  {
+    "id": "172",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Warum ist Yoga so entspannend?",
+    "antwort": "Weil man dabei nicht rennen muss!"
+  },
+  {
+    "id": "173",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Was sagt der Trainer zum Fußballteam?",
+    "antwort": "Wir spielen so, als ob wir gewinnen wollen – heute mal ausnahmsweise!"
+  },
+  {
+    "id": "174",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Warum springt ein Stabhochspringer so hoch?",
+    "antwort": "Weil er ohne Stab nicht so weit kommt!"
+  },
+  {
+    "id": "175",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Was macht ein Tischtennisball, wenn er alleine ist?",
+    "antwort": "Er hüpft einfach so herum – er braucht keine Gesellschaft!"
+  },
+  {
+    "id": "176",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Warum hat ein Hockeyspieler einen Schläger?",
+    "antwort": "Weil man mit dem Fuß schlechter in die Scheibe trifft!"
+  },
+  {
+    "id": "177",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Was sagt die Goldmedaille zum Sportler?",
+    "antwort": "Du hast mich verdient – ich bin stolz auf dich!"
+  },
+  {
+    "id": "178",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Warum rennt der Hase beim Sport immer weg?",
+    "antwort": "Weil das sein Lieblingssport ist – Weglaufen!"
+  },
+  {
+    "id": "179",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Was macht ein Kanufahrer bei Gegenwind?",
+    "antwort": "Er paddelt doppelt so schnell und kommt halb so weit!"
+  },
+  {
+    "id": "180",
+    "kategorie": "Sport",
+    "alter_min": 5,
+    "alter_max": 12,
+    "frage": "Warum hat ein Schachspieler keinen Sport gemacht?",
+    "antwort": "Weil er bei Zügen immer an den Bahnhof denkt!"
+  },
+  {
+    "id": "181",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum fliegt die Hexe auf dem Besen?",
+    "antwort": "Weil der Staubsauger zu schwer ist!"
+  },
+  {
+    "id": "182",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was macht ein Drache, wenn er erkältet ist?",
+    "antwort": "Er niest Feuer – und backt dabei aus Versehen Brot!"
+  },
+  {
+    "id": "183",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum hat der Zauberer immer einen Hut?",
+    "antwort": "Weil er sonst keinen Platz für seine Kaninchen hat!"
+  },
+  {
+    "id": "184",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was sagt der Riese, wenn er stolpert?",
+    "antwort": "Au – und das Erdbeben tut mir leid!"
+  },
+  {
+    "id": "185",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum hat das Einhorn nur ein Horn?",
+    "antwort": "Weil zwei Hörner zu sehr nach Kuh aussehen würden!"
+  },
+  {
+    "id": "186",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was macht ein Vampir, wenn er Hunger hat?",
+    "antwort": "Er geht zum Hals-Imbiss – aber nur nachts geöffnet!"
+  },
+  {
+    "id": "187",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum schläft der Bär im Feenschloss nicht gut?",
+    "antwort": "Weil die Feen die ganze Nacht glitzern!"
+  },
+  {
+    "id": "188",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was sagt der Zwerg zum Schneewittchen?",
+    "antwort": "Du brauchst nur einen Wecker – kein vergiftetes Apfelproblem!"
+  },
+  {
+    "id": "189",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum hat der Zauberstab so viele Sterne?",
+    "antwort": "Weil Punkte nicht magisch genug aussehen!"
+  },
+  {
+    "id": "190",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was macht ein Meerjungfrau-Kind in der Schule?",
+    "antwort": "Es lernt schwimmen – aber das kann es schon auf hohem Niveau!"
+  },
+  {
+    "id": "191",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum hat der Froschkönig kein Gold mehr?",
+    "antwort": "Weil er immer ins Wasser fällt und alles wegspült!"
+  },
+  {
+    "id": "192",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was sagt der Zauberlehrling zu seinem Besen?",
+    "antwort": "Hör auf zu tanzen – ich hab dich nicht dafür verzaubert!"
+  },
+  {
+    "id": "193",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum hat Rapunzel so lange Haare?",
+    "antwort": "Weil sie nie einen Friseur finden konnte, der hoch genug klettert!"
+  },
+  {
+    "id": "194",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was macht ein Kobold, wenn er seinen Topf Gold findet?",
+    "antwort": "Er verscheckt ihn schnell, bevor ihn jemand sieht!"
+  },
+  {
+    "id": "195",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum hat der Drache keine Freunde?",
+    "antwort": "Weil er immer alles heiß macht!"
+  },
+  {
+    "id": "196",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was sagt die Zauberfee zur Prinzessin?",
+    "antwort": "Drei Wünsche – aber bitte nichts mit mehr Wünschen!"
+  },
+  {
+    "id": "197",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum hat der Geist Angst vor dem Staubsauger?",
+    "antwort": "Weil er denkt, man könnte ihn einsaugen!"
+  },
+  {
+    "id": "198",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was macht ein Drache im Winter?",
+    "antwort": "Er beheizt die ganze Burg umsonst!"
+  },
+  {
+    "id": "199",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum hat die Hexe so viele Katzen?",
+    "antwort": "Weil Katzen ihre geheimen Zutateneinkäufer sind!"
+  },
+  {
+    "id": "200",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was sagt das Schloss zur Prinzessin?",
+    "antwort": "Willkommen zuhause – aber bitte kein Turm-Drama mehr!"
+  },
+  {
+    "id": "201",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum reitet der Ritter auf einem Pferd?",
+    "antwort": "Weil Drachen nicht immer pünktlich sind!"
+  },
+  {
+    "id": "202",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was macht ein Troll unter der Brücke?",
+    "antwort": "Er kassiert Maut – aber nur von Ziegen!"
+  },
+  {
+    "id": "203",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum hat Pinocchio eine lange Nase?",
+    "antwort": "Weil er immer lügt – zum Glück wächst das bei uns nicht!"
+  },
+  {
+    "id": "204",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was sagt ein Einhorn zu einem Pferd?",
+    "antwort": "Ich habe etwas, das du nicht hast – und es glitzert!"
+  },
+  {
+    "id": "205",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum hat die Meerjungfrau keine Schuhe?",
+    "antwort": "Weil Flosse und Stöckelschuh schlecht kombinierbar sind!"
+  },
+  {
+    "id": "206",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was macht ein Zauberer, wenn sein Zauber nicht klappt?",
+    "antwort": "Er sagt: Das war so geplant – als Überraschung!"
+  },
+  {
+    "id": "207",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum hat der Weihnachtsmann einen so langen Bart?",
+    "antwort": "Weil er keine Zeit hat, sich zu rasieren – er ist immer im Stress!"
+  },
+  {
+    "id": "208",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was sagt der Zauberspiegel zur bösen Königin?",
+    "antwort": "Schönste im ganzen Land? Ja – ich lüge manchmal auch!"
+  },
+  {
+    "id": "209",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum hat Aladdin nur drei Wünsche?",
+    "antwort": "Weil der Geist Gewerkschaft hat und Überstunden ablehnt!"
+  },
+  {
+    "id": "210",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was macht ein Elfe, wenn er aufgeregt ist?",
+    "antwort": "Er piepst – ganz fein und sehr hoch!"
+  },
+  {
+    "id": "211",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum hat Peter Pan nie Schulden?",
+    "antwort": "Weil er nie erwachsen wird – und Rechnungen nicht öffnet!"
+  },
+  {
+    "id": "212",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was sagt der Fliegende Teppich zum Reiter?",
+    "antwort": "Halt dich fest – ich kenne keine Verkehrsregeln!"
+  },
+  {
+    "id": "213",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum hat die Glücksfee so kleine Flügel?",
+    "antwort": "Weil sie meistens hüpft – fliegen ist ihr zu anstrengend!"
+  },
+  {
+    "id": "214",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Was macht ein Riese, wenn er sich langweilt?",
+    "antwort": "Er zählt die Wolken – die sind auf seiner Höhe!"
+  },
+  {
+    "id": "215",
+    "kategorie": "Fantasie",
+    "alter_min": 4,
+    "alter_max": 12,
+    "frage": "Warum hat die Zauberfee immer ein Glitzerstäbchen?",
+    "antwort": "Weil Glitzer alles besser macht – das weiß jedes Kind!"
+  }
+]

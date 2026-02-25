@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(echo \"Exit: $?\")",
+      "Bash(\"C:/Users/baich/Desktop/Kinderwitzemaschine/package.json\":*)",
+      "Bash(\"C:/Users/baich/Desktop/Kinderwitzemaschine/.gitignore\":*)",
+      "Bash(\"C:/Users/baich/Desktop/Kinderwitzemaschine/Procfile\":*)",
+      "Bash(node -e \":*)"
+    ]
+  }
+}
