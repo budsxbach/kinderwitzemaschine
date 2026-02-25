@@ -11,26 +11,26 @@ Kinderwitzemaschine
 
 ### Short Description (Englisch — max. 100 Zeichen)
 ```
-German children's joke generator – fun & family-friendly jokes for kids aged 4–12
+German children's joke generator – fun & family-friendly jokes for the whole family
 ```
 
 ### Short Description (Deutsch)
 ```
-Kinderwitze-Generator – lustige, altersgerechte Witze für Kinder von 4–12 Jahren
+Kinderwitze-Generator – lustige, familienfreundliche Witze für die ganze Familie
 ```
 
 ### Full Description (Englisch)
 ```
 Kinderwitzemaschine brings a curated database of 215+ German children's jokes
 directly into ChatGPT. Perfect for parents, grandparents, and teachers who want
-to share fun, age-appropriate humor with children.
+to share fun, family-friendly humor with their loved ones.
 
 Features:
 • Get a random children's joke anytime
 • Browse jokes by category: Animals, School, Food, Family, Sports, Fantasy
-• Search jokes by keyword (e.g. "elephant", "pizza", "dragon")
+• Search jokes by keyword — smart fallback ensures you always get a joke
 
-All content is age-appropriate for children aged 4–12. No user data is collected.
+All content is family-friendly and suitable for the whole family. No user data is collected.
 No login required. Free to use.
 ```
 
@@ -45,7 +45,7 @@ Funktionen:
 • Witze nach Kategorie: Tiere, Schule, Essen, Familie, Sport, Fantasie
 • Witze nach Stichwort suchen (z.B. "Elefant", "Pizza", "Drachen")
 
-Alle Inhalte sind altersgerecht für Kinder von 4–12 Jahren.
+Alle Inhalte sind familienfreundlich und für die ganze Familie geeignet.
 Es werden keine Nutzerdaten gesammelt. Keine Anmeldung erforderlich. Kostenlos.
 ```
 

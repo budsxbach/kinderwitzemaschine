@@ -16,6 +16,11 @@ app.use("/public", express.static(join(__dirname, "public")));
 // Witze laden (einmalig beim Start)
 const jokes = JSON.parse(readFileSync(join(__dirname, "jokes.json"), "utf-8"));
 
+// Hilfsfunktion: Zufälligen Witz formatieren
+function formatJoke(witz) {
+  return `❓ ${witz.frage}\n\n😄 ${witz.antwort}`;
+}
+
 // MCP-Endpunkt — jede Anfrage bekommt eine neue Server-Instanz (stateless)
 app.post("/mcp", async (req, res) => {
   const transport = new StreamableHTTPServerTransport({
@@ -27,13 +32,15 @@ app.post("/mcp", async (req, res) => {
     version: "1.0.0",
   });
 
-  // Tool 1: Zufälliger Witz
+  // Tool 1: Random joke
   server.registerTool(
-    "zufallswitz",
+    "get_random_joke",
     {
-      title: "Zufälliger Kinderwitz",
+      title: "Get a Random Children's Joke",
       description:
-        "Gibt einen zufälligen deutschen Kinderwitz zurück. Perfekt wenn kein bestimmtes Thema gewünscht wird. Für Kinder von 4–12 Jahren.",
+        "Returns a random German children's joke from the Kinderwitzemaschine database. " +
+        "Use this when the user asks for any joke without specifying a topic or category. " +
+        "All jokes are family-friendly and suitable for the whole family.",
       annotations: { readOnlyHint: true, openWorldHint: false },
     },
     () => {
@@ -42,67 +49,67 @@ app.post("/mcp", async (req, res) => {
         content: [
           {
             type: "text",
-            text: `Kategorie: ${witz.kategorie}\n\n❓ ${witz.frage}\n\n😄 ${witz.antwort}`,
+            text: `🎉 Here is a German children's joke!\n\n${formatJoke(witz)}\n\n📂 Category: ${witz.kategorie}`,
           },
         ],
       };
     }
   );
 
-  // Tool 2: Witz nach Kategorie
+  // Tool 2: Joke by category
   server.registerTool(
-    "witz_nach_kategorie",
+    "get_joke_by_category",
     {
-      title: "Kinderwitz nach Kategorie",
+      title: "Get a Children's Joke by Category",
       description:
-        "Gibt einen deutschen Kinderwitz aus einer bestimmten Kategorie zurück. Verfügbare Kategorien: Tiere, Schule, Essen, Familie, Sport, Fantasie",
+        "Returns a German children's joke from a specific category. " +
+        "Available categories: Tiere (Animals), Schule (School), Essen (Food), " +
+        "Familie (Family), Sport (Sports), Fantasie (Fantasy). " +
+        "Use this when the user asks for jokes about a specific topic.",
       annotations: { readOnlyHint: true, openWorldHint: false },
       inputSchema: z.object({
         kategorie: z
           .enum(["Tiere", "Schule", "Essen", "Familie", "Sport", "Fantasie"])
           .describe(
-            "Die gewünschte Kategorie. Erlaubt: Tiere, Schule, Essen, Familie, Sport, Fantasie"
+            "The joke category. Options: " +
+            "Tiere (Animals), Schule (School), Essen (Food), " +
+            "Familie (Family), Sport (Sports), Fantasie (Fantasy)"
           ),
       }),
     },
     ({ kategorie }) => {
       const gefiltert = jokes.filter((j) => j.kategorie === kategorie);
-      if (gefiltert.length === 0) {
-        return {
-          content: [
-            {
-              type: "text",
-              text: `Keine Witze in der Kategorie "${kategorie}" gefunden.`,
-            },
-          ],
-        };
-      }
       const witz = gefiltert[Math.floor(Math.random() * gefiltert.length)];
       return {
         content: [
           {
             type: "text",
-            text: `Kategorie: ${witz.kategorie}\n\n❓ ${witz.frage}\n\n😄 ${witz.antwort}`,
+            text: `🎉 A joke from the category "${kategorie}":\n\n${formatJoke(witz)}`,
           },
         ],
       };
     }
   );
 
-  // Tool 3: Witz nach Stichwort suchen
+  // Tool 3: Search jokes by keyword — with smart fallback
   server.registerTool(
-    "witz_suchen",
+    "search_jokes",
     {
-      title: "Kinderwitz nach Stichwort suchen",
+      title: "Search Children's Jokes by Keyword",
       description:
-        "Sucht deutsche Kinderwitze nach einem Stichwort (z.B. 'Elefant', 'Hausaufgaben', 'Pizza', 'Drachen')",
+        "Searches German children's jokes by keyword in German or English. " +
+        "If no exact match is found, automatically returns a random joke as a friendly fallback " +
+        "so the user always gets entertained. " +
+        "Examples: 'elephant', 'Elefant', 'pizza', 'dragon', 'Schule', 'school'.",
       annotations: { readOnlyHint: true, openWorldHint: false },
       inputSchema: z.object({
         stichwort: z
           .string()
           .min(2)
           .max(50)
-          .describe("Das Stichwort für die Suche, z.B. 'Elefant' oder 'Schule'"),
+          .describe(
+            "Search keyword in German or English, e.g. 'Elefant', 'elephant', 'Pizza', 'Drachen'"
+          ),
       }),
     },
     ({ stichwort }) => {
@@ -113,22 +120,31 @@ app.post("/mcp", async (req, res) => {
           j.antwort.toLowerCase().includes(keyword) ||
           j.kategorie.toLowerCase().includes(keyword)
       );
+
+      // Kein Treffer → smarter Fallback statt leere Antwort
       if (ergebnisse.length === 0) {
+        const fallback = jokes[Math.floor(Math.random() * jokes.length)];
         return {
           content: [
             {
               type: "text",
-              text: `Keine Witze mit dem Stichwort "${stichwort}" gefunden. Versuche ein anderes Wort!`,
+              text:
+                `🔍 No joke found for "${stichwort}" — but here is a funny one anyway:\n\n` +
+                `${formatJoke(fallback)}\n\n` +
+                `💡 Tip: Try categories like Animals, School, Food, Family, Sports or Fantasy!`,
             },
           ],
         };
       }
+
       const witz = ergebnisse[Math.floor(Math.random() * ergebnisse.length)];
       return {
         content: [
           {
             type: "text",
-            text: `Gefunden für "${stichwort}" (${ergebnisse.length} Treffer):\n\n❓ ${witz.frage}\n\n😄 ${witz.antwort}`,
+            text:
+              `🔍 Found ${ergebnisse.length} joke(s) for "${stichwort}":\n\n` +
+              `${formatJoke(witz)}`,
           },
         ],
       };
@@ -139,7 +155,7 @@ app.post("/mcp", async (req, res) => {
   await transport.handleRequest(req, res, req.body);
 });
 
-// Health Check — für Railway und OpenAI-Reviewer
+// Health Check
 app.get("/", (req, res) => {
   res.json({
     status: "ok",
@@ -150,7 +166,7 @@ app.get("/", (req, res) => {
   });
 });
 
-// Datenschutz-Seite — Pflicht für OpenAI App Submission
+// Datenschutz-Seite
 app.get("/datenschutz", (req, res) => {
   res.sendFile(join(__dirname, "public", "datenschutz.html"));
 });
