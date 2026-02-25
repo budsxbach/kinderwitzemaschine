@@ -4,146 +4,422 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Datenschutzerklärung – Kinderwitzemaschine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
+    :root {
+      --bg:           #ffffff;
+      --surface:      #f7f7f8;
+      --border:       #e5e5e5;
+      --text:         #0d0d0d;
+      --text-muted:   #6e6e80;
+      --accent:       #10a37f;
+      --accent-light: #e6f4f1;
+      --radius:       10px;
+      --shadow:       0 1px 4px rgba(0,0,0,0.08);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-      color: #333;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: var(--surface);
+      color: var(--text);
       line-height: 1.7;
+      font-size: 15px;
+      min-height: 100vh;
     }
-    h1 { color: #e05a00; }
-    h2 { color: #555; margin-top: 2em; }
+
+    /* ── Header ─────────────────────────────── */
+    header {
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      padding: 0 24px;
+    }
+    .header-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+    }
+    .logo-name {
+      font-weight: 700;
+      font-size: 15px;
+      color: var(--text);
+      letter-spacing: -0.2px;
+    }
+    .header-divider {
+      width: 1px;
+      height: 18px;
+      background: var(--border);
+      margin: 0 4px;
+    }
+    .header-label {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* ── Main card ──────────────────────────── */
+    main {
+      max-width: 800px;
+      margin: 36px auto;
+      padding: 0 20px 60px;
+    }
+
+    .card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    /* ── Page title block ───────────────────── */
+    .page-title-block {
+      padding: 36px 40px 28px;
+      border-bottom: 1px solid var(--border);
+    }
+    .page-title-block h1 {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 10px;
+    }
+    .meta-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
     .badge {
-      display: inline-block;
-      background: #e8f5e9;
-      color: #2e7d32;
-      padding: 4px 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: var(--accent-light);
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 10px;
       border-radius: 20px;
-      font-weight: bold;
-      font-size: 0.9em;
+      border: 1px solid rgba(16,163,127,0.2);
     }
-    .lang-switch { text-align: right; margin-bottom: 1em; }
-    .lang-switch a { color: #e05a00; text-decoration: none; }
-    hr { border: none; border-top: 1px solid #eee; margin: 2em 0; }
+    .badge::before {
+      content: '✓';
+      font-size: 11px;
+    }
+    .date-label {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* ── Language tabs ──────────────────────── */
+    .lang-tabs {
+      display: flex;
+      gap: 0;
+      padding: 0 40px;
+      border-bottom: 1px solid var(--border);
+      background: var(--bg);
+    }
+    .lang-tab {
+      padding: 14px 18px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-muted);
+      cursor: pointer;
+      border: none;
+      background: none;
+      border-bottom: 2px solid transparent;
+      margin-bottom: -1px;
+      transition: color 0.15s, border-color 0.15s;
+      font-family: inherit;
+    }
+    .lang-tab:hover { color: var(--text); }
+    .lang-tab.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    /* ── Content area ───────────────────────── */
+    .content {
+      padding: 36px 40px;
+      display: none;
+    }
+    .content.active { display: block; }
+
+    /* ── Sections ───────────────────────────── */
+    .section {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .section:last-child { border-bottom: none; padding-bottom: 0; }
+    .section:first-child { padding-top: 0; }
+
+    .section h2 {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      margin-bottom: 10px;
+    }
+    .section p {
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    .section p:last-child { margin-bottom: 0; }
+    .section strong { font-weight: 600; }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+
+    /* ── Highlight box ──────────────────────── */
+    .info-box {
+      background: var(--accent-light);
+      border: 1px solid rgba(16,163,127,0.25);
+      border-radius: 8px;
+      padding: 14px 18px;
+      font-size: 14px;
+      color: #0a5c47;
+      margin-bottom: 20px;
+    }
+    .info-box strong { color: #085a42; }
+
+    /* ── Footer ─────────────────────────────── */
+    footer {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px 40px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    footer a { color: var(--text-muted); }
+    footer a:hover { color: var(--accent); text-decoration: none; }
+
+    /* ── Responsive ─────────────────────────── */
+    @media (max-width: 600px) {
+      .page-title-block, .lang-tabs, .content { padding-left: 20px; padding-right: 20px; }
+      .page-title-block h1 { font-size: 20px; }
+      main { margin: 16px auto; }
+    }
   </style>
 </head>
 <body>
 
-  <h1>🎪 Kinderwitzemaschine</h1>
-  <p class="badge">✅ Keine Nutzerdaten werden gesammelt</p>
+  <header>
+    <div class="header-inner">
+      <div class="logo-dot"></div>
+      <span class="logo-name">Kinderwitzemaschine</span>
+      <div class="header-divider"></div>
+      <span class="header-label">Privacy & Legal</span>
+    </div>
+  </header>
 
-  <h1>Datenschutzerklärung</h1>
-  <p><strong>Zuletzt aktualisiert:</strong> Februar 2026</p>
+  <main>
+    <div class="card">
 
-  <h2>1. Wer ist verantwortlich?</h2>
-  <p>
-    Diese App wird betrieben als Einzelperson.<br />
-    Kontakt: <a href="mailto:kontakt@kinderwitzemaschine.de">kontakt@kinderwitzemaschine.de</a>
-  </p>
+      <!-- Title -->
+      <div class="page-title-block">
+        <h1>Datenschutzerklärung</h1>
+        <div class="meta-row">
+          <span class="badge">Keine Nutzerdaten werden gesammelt</span>
+          <span class="date-label">Zuletzt aktualisiert: Februar 2026</span>
+        </div>
+      </div>
 
-  <h2>2. Welche personenbezogenen Daten werden gesammelt?</h2>
-  <p>
-    <strong>Keine.</strong> Die Kinderwitzemaschine sammelt, speichert oder verarbeitet
-    keine personenbezogenen Daten der Nutzer. Es werden keine Cookies gesetzt,
-    keine Tracking-Skripte verwendet und keine Nutzerprofile erstellt.
-  </p>
-  <p>
-    Die App liefert lediglich Kinderwitze aus einer vorbereiteten Datenbank.
-    Anfragen werden nicht protokolliert und nicht gespeichert.
-  </p>
+      <!-- Language tabs -->
+      <div class="lang-tabs">
+        <button class="lang-tab active" onclick="switchLang('de', this)">Deutsch</button>
+        <button class="lang-tab" onclick="switchLang('en', this)">English</button>
+      </div>
 
-  <h2>3. Zu welchem Zweck werden Daten verwendet?</h2>
-  <p>
-    Da keine Daten gesammelt werden, gibt es keinen Verwendungszweck.
-    Die einzige Funktion der App ist die Bereitstellung von
-    altersgerechten deutschen Kinderwitzen.
-  </p>
+      <!-- ── DEUTSCH ─────────────────────────── -->
+      <div id="lang-de" class="content active">
 
-  <h2>4. Wer erhält die Daten?</h2>
-  <p>
-    Da keine Daten gesammelt werden, werden auch keine Daten an Dritte
-    weitergegeben. Es gibt keine Datenübermittlung an Partner, Werbetreibende
-    oder andere Dritte.
-  </p>
+        <div class="info-box">
+          <strong>Kurz gesagt:</strong> Diese App sammelt, speichert und verarbeitet keinerlei
+          personenbezogene Daten. Es werden keine Cookies gesetzt und kein Tracking eingesetzt.
+        </div>
 
-  <h2>5. Welche Rechte haben Nutzer?</h2>
-  <p>
-    Da keine personenbezogenen Daten verarbeitet werden, sind keine
-    Maßnahmen zur Datenkontrolle erforderlich. Nutzer können die App
-    jederzeit ohne Datenlöschungsverfahren aufhören zu verwenden.
-  </p>
+        <div class="section">
+          <h2>1 · Verantwortliche Person</h2>
+          <p>Diese App wird von einer Einzelperson betrieben.</p>
+          <p>Kontakt: <a href="mailto:system.reset.all@gmail.com">system.reset.all@gmail.com</a></p>
+        </div>
 
-  <h2>6. Hosting</h2>
-  <p>
-    Diese App wird auf Railway.app (Railway Corp., USA) gehostet.
-    Railway speichert möglicherweise Standard-Server-Logs (IP-Adressen,
-    Zeitstempel) für kurze Zeit für Betriebszwecke. Diese Logs sind nicht
-    für den App-Betreiber zugänglich.
-    Weitere Informationen: <a href="https://railway.app/legal/privacy" target="_blank">railway.app/legal/privacy</a>
-  </p>
+        <div class="section">
+          <h2>2 · Erhobene personenbezogene Daten</h2>
+          <p>
+            <strong>Keine.</strong> Die Kinderwitzemaschine sammelt, speichert oder verarbeitet
+            keine personenbezogenen Daten der Nutzer. Es werden keine Cookies gesetzt,
+            keine Tracking-Skripte verwendet und keine Nutzerprofile erstellt.
+          </p>
+          <p>
+            Die App liefert ausschließlich Kinderwitze aus einer vorbereiteten, statischen
+            Datenbank. Anfragen werden vom App-Betreiber weder protokolliert noch gespeichert.
+          </p>
+        </div>
 
-  <h2>7. Kontakt</h2>
-  <p>
-    Bei Fragen zur Datenschutzerklärung:<br />
-    <a href="mailto:kontakt@kinderwitzemaschine.de">kontakt@kinderwitzemaschine.de</a>
-  </p>
+        <div class="section">
+          <h2>3 · Zweck der Datenverarbeitung</h2>
+          <p>
+            Da keine Daten gesammelt werden, gibt es keinen Verarbeitungszweck.
+            Die einzige Funktion der App ist die Bereitstellung altersgerechter
+            deutscher Kinderwitze.
+          </p>
+        </div>
 
-  <hr />
+        <div class="section">
+          <h2>4 · Empfänger der Daten</h2>
+          <p>
+            Da keine Daten gesammelt werden, werden auch keine Daten an Dritte
+            weitergegeben. Es gibt keine Datenübermittlung an Partner,
+            Werbetreibende oder sonstige Dritte.
+          </p>
+        </div>
 
-  <!-- English version for OpenAI reviewers -->
-  <h1>Privacy Policy (English)</h1>
-  <p><strong>Last updated:</strong> February 2026</p>
+        <div class="section">
+          <h2>5 · Rechte der Nutzer</h2>
+          <p>
+            Da keine personenbezogenen Daten verarbeitet werden, sind keine
+            Maßnahmen zur Datenkontrolle erforderlich. Nutzer können die App
+            jederzeit ohne Datenlöschungsverfahren aufhören zu verwenden.
+          </p>
+        </div>
 
-  <h2>1. Who is responsible?</h2>
-  <p>
-    This app is operated by an individual developer.<br />
-    Contact: <a href="mailto:kontakt@kinderwitzemaschine.de">kontakt@kinderwitzemaschine.de</a>
-  </p>
+        <div class="section">
+          <h2>6 · Hosting</h2>
+          <p>
+            Diese App wird auf Railway.app (Railway Corp., USA) gehostet.
+            Railway speichert möglicherweise Standard-Server-Logs (IP-Adressen,
+            Zeitstempel) für kurze Zeit zu Betriebszwecken. Diese Logs sind für
+            den App-Betreiber nicht einsehbar.
+          </p>
+          <p>
+            Weitere Informationen:
+            <a href="https://railway.app/legal/privacy" target="_blank" rel="noopener">
+              railway.app/legal/privacy
+            </a>
+          </p>
+        </div>
 
-  <h2>2. What personal data is collected?</h2>
-  <p>
-    <strong>None.</strong> Kinderwitzemaschine does not collect, store, or process
-    any personal data from users. No cookies are set, no tracking scripts are used,
-    and no user profiles are created.
-  </p>
-  <p>
-    The app only serves children's jokes from a pre-prepared static database.
-    Requests are not logged or stored by the app operator.
-  </p>
+        <div class="section">
+          <h2>7 · Kontakt</h2>
+          <p>
+            Bei Fragen zur Datenschutzerklärung:<br />
+            <a href="mailto:system.reset.all@gmail.com">system.reset.all@gmail.com</a>
+          </p>
+        </div>
 
-  <h2>3. Purpose of data processing</h2>
-  <p>
-    Since no data is collected, there is no purpose of data processing.
-    The sole function of this app is to provide age-appropriate German children's jokes.
-  </p>
+      </div>
 
-  <h2>4. Categories of recipients</h2>
-  <p>
-    Since no data is collected, no data is shared with any third parties.
-    There is no data transmission to partners, advertisers, or other third parties.
-  </p>
+      <!-- ── ENGLISH ─────────────────────────── -->
+      <div id="lang-en" class="content">
 
-  <h2>5. User controls</h2>
-  <p>
-    Since no personal data is processed, no data control measures are required.
-    Users can stop using the app at any time without any data deletion process.
-  </p>
+        <div class="info-box">
+          <strong>In short:</strong> This app does not collect, store, or process any personal data.
+          No cookies are set and no tracking is used.
+        </div>
 
-  <h2>6. Hosting</h2>
-  <p>
-    This app is hosted on Railway.app (Railway Corp., USA).
-    Railway may store standard server logs (IP addresses, timestamps) briefly for
-    operational purposes. These logs are not accessible to the app operator.
-    More info: <a href="https://railway.app/legal/privacy" target="_blank">railway.app/legal/privacy</a>
-  </p>
+        <div class="section">
+          <h2>1 · Controller</h2>
+          <p>This app is operated by an individual developer.</p>
+          <p>Contact: <a href="mailto:system.reset.all@gmail.com">system.reset.all@gmail.com</a></p>
+        </div>
 
-  <h2>7. Contact</h2>
-  <p>
-    For privacy questions:<br />
-    <a href="mailto:kontakt@kinderwitzemaschine.de">kontakt@kinderwitzemaschine.de</a>
-  </p>
+        <div class="section">
+          <h2>2 · Personal data collected</h2>
+          <p>
+            <strong>None.</strong> Kinderwitzemaschine does not collect, store, or process
+            any personal data from users. No cookies are set, no tracking scripts are used,
+            and no user profiles are created.
+          </p>
+          <p>
+            The app only serves children's jokes from a pre-prepared, static database.
+            Requests are not logged or stored by the app operator.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>3 · Purpose of data processing</h2>
+          <p>
+            Since no data is collected, there is no purpose of data processing.
+            The sole function of this app is to provide age-appropriate
+            German children's jokes.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>4 · Categories of recipients</h2>
+          <p>
+            Since no data is collected, no data is shared with any third parties.
+            There is no data transmission to partners, advertisers, or other third parties.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>5 · User controls</h2>
+          <p>
+            Since no personal data is processed, no data control measures are required.
+            Users can stop using the app at any time without any data deletion process.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>6 · Hosting</h2>
+          <p>
+            This app is hosted on Railway.app (Railway Corp., USA).
+            Railway may store standard server logs (IP addresses, timestamps) briefly
+            for operational purposes. These logs are not accessible to the app operator.
+          </p>
+          <p>
+            More info:
+            <a href="https://railway.app/legal/privacy" target="_blank" rel="noopener">
+              railway.app/legal/privacy
+            </a>
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>7 · Contact</h2>
+          <p>
+            For privacy questions:<br />
+            <a href="mailto:system.reset.all@gmail.com">system.reset.all@gmail.com</a>
+          </p>
+        </div>
+
+      </div>
+    </div><!-- /.card -->
+  </main>
+
+  <footer>
+    <p>© 2026 Kinderwitzemaschine &nbsp;·&nbsp; Zuletzt aktualisiert: Februar 2026</p>
+  </footer>
+
+  <script>
+    function switchLang(lang, btn) {
+      // Alle Contents ausblenden
+      document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
+      // Alle Tabs deaktivieren
+      document.querySelectorAll('.lang-tab').forEach(el => el.classList.remove('active'));
+      // Ausgewählten Tab + Content aktivieren
+      document.getElementById('lang-' + lang).classList.add('active');
+      btn.classList.add('active');
+    }
+  </script>
 
 </body>
 </html>
